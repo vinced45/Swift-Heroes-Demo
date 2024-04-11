@@ -1,0 +1,10 @@
+{
+  "Simulator Target Bundle": "com.swiftheroes.Demo”,
+  "aps": {
+    "category" : "default”,
+    "alert": {
+      "title": "Transfer Update",
+      "body": "Your Transfer has been downloaded"
+    }
+  }
+}
