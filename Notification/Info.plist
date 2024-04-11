@@ -21,7 +21,7 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.usernotifications.content-extension</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>Notification.NotificationViewController</string>
+		<string>$(PRODUCT_MODULE_NAME).NotificationViewController</string>
 	</dict>
 </dict>
 </plist>

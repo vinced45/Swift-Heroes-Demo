@@ -54,7 +54,12 @@ public extension ExtensionItem {
                   image: Image(systemName: "list.bullet")
                  ),
             .init(id: "8",
-                  name: "External Screen", 
+                  name: "Handoff",
+                  desc: "",
+                  image: Image(systemName: "macbook.and.iphone")
+                 ),
+            .init(id: "9",
+                  name: "External Screen",
                   desc: "",
                   image: Image(systemName: "tv")
                  ),

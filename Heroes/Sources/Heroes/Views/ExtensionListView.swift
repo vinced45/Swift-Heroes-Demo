@@ -19,11 +19,11 @@ public struct ExtensionListView: View {
     public var body: some View {
         NavigationStack {
             List(ExtensionItem.all) { item in
-                HStack {
-                    item.image.styled()
-                    
+                Label(title: {
                     Text(item.name)
-                }
+                }, icon: {
+                    item.image.styled()
+                })
             }
             .listStyle(.grouped)
             .navigationTitle("Extensions")

@@ -17,7 +17,7 @@ public extension Image {
 extension Image {
     func styled() -> some View {
         self
-            .font(.title)
+            .font(.title2)
             .symbolRenderingMode(.palette)
             .foregroundStyle(Color.heroOrange, Color.heroBlue)
     }
