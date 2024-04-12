@@ -1,8 +1,13 @@
-//
-//  File.swift
-//  
-//
-//  Created by Vince Davis on 4/11/24.
-//
+import XCTest
+@testable import HeroiOS
 
-import Foundation
+final class HeroiOSTests: XCTestCase {
+    func testExample() throws {
+        // XCTest Documentation
+        // https://developer.apple.com/documentation/xctest
+
+        // Defining Test Cases and Test Methods
+        // https://developer.apple.com/documentation/xctest/defining_test_cases_and_test_methods
+    }
+}
+

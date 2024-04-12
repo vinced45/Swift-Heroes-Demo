@@ -8,7 +8,8 @@
 import UIKit
 import UserNotifications
 import UserNotificationsUI
-import Heroes
+import HeroiOS
+import HeroShared
 import SwiftUI
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {

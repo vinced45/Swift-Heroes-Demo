@@ -7,7 +7,8 @@
 
 import Foundation
 import UIKit
-import Heroes
+import HeroiOS
+import HeroShared
 
 extension AppDelegate {
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

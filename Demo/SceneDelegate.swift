@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import Heroes
+import HeroiOS
+import HeroShared
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func windowScene(_ windowScene: UIWindowScene, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {

@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import Observation
+import HeroShared
 
 @Observable
 public class ScreenManager {
@@ -17,9 +18,6 @@ public class ScreenManager {
     public var speaker: Speaker = Speaker(id: "1", name: "Alex", image: .alex)
     
     public func changeSpeaker() {
-//        if let random = ["wow", "cool", "better"].randomElement() {
-//            text = random
-//        }
         if let newSpeaker = Speaker.all.randomElement() {
             speaker = newSpeaker
         }

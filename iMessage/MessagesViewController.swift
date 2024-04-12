@@ -8,7 +8,8 @@
 import UIKit
 import Messages
 import SwiftUI
-import Heroes
+import HeroiOS
+import HeroShared
 
 class MessagesViewController: MSMessagesAppViewController {
     

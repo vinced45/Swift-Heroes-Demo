@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import HeroShared
 
 public struct ExtensionListView: View {
     @Environment(ScreenManager.self) var screenManager: ScreenManager
@@ -31,30 +32,9 @@ public struct ExtensionListView: View {
             .listStyle(.grouped)
             #endif
             .navigationTitle("Extensions")
-            .toolbarBackground(Color.heroOrange, for: .navigationBar)
+            .toolbarBackground(Color.heroOrange.gradient, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Text("👓")
-                        .font(.largeTitle)
-                }
-                #if os(iOS)
-                ToolbarItem(placement: .topBarTrailing) {
-                    if screenManager.showScreen {
-                        Button(action: {
-                            //screenManager.changeSpeaker()
-                            isSheetPresented = true
-                        }, label: {
-                            Image(systemName: "airplayvideo")
-                                .font(.title3)
-                                .symbolRenderingMode(.palette)
-                                .foregroundStyle(.black, .blue)
-                                .symbolEffect(.pulse.byLayer, isActive: true)
-                        })
-                    }
-                }
-                #endif
-            }
+            .externalScreenToolbar(screenManager: screenManager, showingSheet: $isSheetPresented)
         }
         #if os(iOS)
         .sheet(isPresented: $isSheetPresented) {

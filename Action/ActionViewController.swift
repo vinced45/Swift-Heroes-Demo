@@ -8,8 +8,9 @@
 import UIKit
 import MobileCoreServices
 import UniformTypeIdentifiers
-import Heroes
 import SwiftUI
+import HeroiOS
+import HeroShared
 
 class ActionViewController: UIViewController {
 

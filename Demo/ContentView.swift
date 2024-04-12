@@ -7,7 +7,8 @@
 
 import SwiftUI
 import CoreSpotlight
-import Heroes
+import HeroiOS
+import HeroShared
 
 struct ContentView: View {
     @Environment(ScreenManager.self) var screenManager: ScreenManager

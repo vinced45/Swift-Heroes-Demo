@@ -14,7 +14,7 @@ public extension Image {
     static let andrea = Image("andrea", bundle: .module)
 }
 
-extension Image {
+public extension Image {
     func styled() -> some View {
         self
             .font(.title2)

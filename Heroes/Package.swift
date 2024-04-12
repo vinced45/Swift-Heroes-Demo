@@ -9,16 +9,25 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "Heroes",
-            targets: ["Heroes"]),
+            name: "HeroShared",
+            targets: ["HeroShared"]),
+        .library(
+            name: "HeroiOS",
+            targets: ["HeroiOS"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "Heroes"),
+            name: "HeroShared"),
         .testTarget(
-            name: "HeroesTests",
-            dependencies: ["Heroes"]),
+            name: "HeroSharedTests",
+            dependencies: ["HeroShared"]),
+        .target(
+            name: "HeroiOS",
+            dependencies: ["HeroShared"]),
+        .testTarget(
+            name: "HeroiOSTests",
+            dependencies: ["HeroiOS", "HeroShared"]),
     ]
 )

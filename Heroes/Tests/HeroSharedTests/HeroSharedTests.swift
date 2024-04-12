@@ -1,7 +1,7 @@
 import XCTest
-@testable import Heroes
+@testable import HeroShared
 
-final class HeroesTests: XCTestCase {
+final class HeroSharedTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

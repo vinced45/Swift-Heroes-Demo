@@ -8,7 +8,8 @@
 import UIKit
 import Social
 import SwiftUI
-import Heroes
+import HeroiOS
+import HeroShared
 
 class ShareViewController: UIViewController/* SLComposeServiceViewController */  {
 

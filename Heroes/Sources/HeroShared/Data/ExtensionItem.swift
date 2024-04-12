@@ -9,10 +9,17 @@ import Foundation
 import SwiftUI
 
 public struct ExtensionItem: Identifiable, Equatable {
+    public init(id: String, name: String, desc: String, image: Image) {
+        self.id = id
+        self.name = name
+        self.desc = desc
+        self.image = image
+    }
+
     public var id: String
-    var name: String
-    var desc: String
-    var image: Image
+    public var name: String
+    public var desc: String
+    public var image: Image
 }
 
 public extension ExtensionItem {

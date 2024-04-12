@@ -27,15 +27,9 @@
 		4E5F30C62BC3602600356231 /* iMessage.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30B82BC3602400356231 /* iMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30D12BC3606300356231 /* ImportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30D02BC3606300356231 /* ImportExtension.swift */; };
 		4E5F30D52BC3606300356231 /* Spotlight.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30CE2BC3606300356231 /* Spotlight.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4E5F30DE2BC3623F00356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F30DD2BC3623F00356231 /* Heroes */; };
-		4E5F30E02BC3636000356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F30DF2BC3636000356231 /* Heroes */; };
 		4E5F30E82BC3659600356231 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30E72BC3659600356231 /* NotificationService.swift */; };
 		4E5F30EC2BC3659600356231 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30E52BC3659600356231 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4E5F30F12BC366C700356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F30F02BC366C700356231 /* Heroes */; };
-		4E5F30F32BC36D8A00356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F30F22BC36D8A00356231 /* Heroes */; };
-		4E5F30F52BC3701700356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F30F42BC3701700356231 /* Heroes */; };
 		4E5F30F72BC380BF00356231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30F62BC380BF00356231 /* AppDelegate.swift */; };
-		4E5F30F92BC38C8000356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F30F82BC38C8000356231 /* Heroes */; };
 		4E5F31042BC420D500356231 /* pretravel-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FA2BC420D500356231 /* pretravel-1.png */; };
 		4E5F31052BC420D500356231 /* pretravel-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FB2BC420D500356231 /* pretravel-2.png */; };
 		4E5F31062BC420D500356231 /* pretravel-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FC2BC420D500356231 /* pretravel-3.png */; };
@@ -50,10 +44,29 @@
 		4E5F31182BC4256700356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31172BC4256700356231 /* Assets.xcassets */; };
 		4E5F311B2BC4256700356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F311A2BC4256700356231 /* Preview Assets.xcassets */; };
 		4E5F31202BC4256700356231 /* AppClips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4E5F31112BC4256500356231 /* AppClips.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4E5F31262BC42EAB00356231 /* Heroes in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31252BC42EAB00356231 /* Heroes */; };
 		4E5F312E2BC7165100356231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F312D2BC7165100356231 /* SceneDelegate.swift */; };
 		4E5F31302BC7382D00356231 /* AppDelegate+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */; };
 		4E5F31322BC7389600356231 /* AppDelegate+QuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */; };
+		4E5F31542BC83D0A00356231 /* HeroesWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */; };
+		4E5F31562BC83D0A00356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31552BC83D0A00356231 /* ContentView.swift */; };
+		4E5F31582BC83D0C00356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31572BC83D0C00356231 /* Assets.xcassets */; };
+		4E5F315B2BC83D0C00356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */; };
+		4E5F315E2BC83D0C00356231 /* HeroesWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F31662BC8BA0300356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31652BC8BA0300356231 /* HeroiOS */; };
+		4E5F31682BC8BA0700356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31672BC8BA0700356231 /* HeroShared */; };
+		4E5F316A2BC8BA1B00356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31692BC8BA1B00356231 /* HeroiOS */; };
+		4E5F316C2BC8BA1F00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F316B2BC8BA1F00356231 /* HeroShared */; };
+		4E5F316E2BC8BA2600356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F316D2BC8BA2600356231 /* HeroiOS */; };
+		4E5F31702BC8BA2A00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F316F2BC8BA2A00356231 /* HeroShared */; };
+		4E5F31722BC8BA3600356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31712BC8BA3600356231 /* HeroiOS */; };
+		4E5F31742BC8BA3A00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31732BC8BA3A00356231 /* HeroShared */; };
+		4E5F31762BC8BA4500356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31752BC8BA4500356231 /* HeroiOS */; };
+		4E5F31782BC8BA4800356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31772BC8BA4800356231 /* HeroShared */; };
+		4E5F317A2BC8BA5100356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31792BC8BA5100356231 /* HeroiOS */; };
+		4E5F317C2BC8BA5400356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317B2BC8BA5400356231 /* HeroShared */; };
+		4E5F317E2BC8BA7900356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317D2BC8BA7900356231 /* HeroiOS */; };
+		4E5F31802BC8BA7C00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317F2BC8BA7C00356231 /* HeroShared */; };
+		4E5F31822BC8BA8400356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31812BC8BA8400356231 /* HeroShared */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +119,13 @@
 			remoteGlobalIDString = 4E5F31102BC4256500356231;
 			remoteInfo = AppClips;
 		};
+		4E5F315C2BC83D0C00356231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E5F305A2BC35E9000356231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E5F31502BC83D0A00356231;
+			remoteInfo = "HeroesWatch Watch App";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,6 +154,17 @@
 				4E5F31202BC4256700356231 /* AppClips.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5F315F2BC83D0C00356231 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4E5F315E2BC83D0C00356231 /* HeroesWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -191,6 +222,11 @@
 		4E5F312D2BC7165100356231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Notifications.swift"; sourceTree = "<group>"; };
 		4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QuickActions.swift"; sourceTree = "<group>"; };
+		4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HeroesWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesWatchApp.swift; sourceTree = "<group>"; };
+		4E5F31552BC83D0A00356231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4E5F31572BC83D0C00356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,7 +234,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F30E02BC3636000356231 /* Heroes in Frameworks */,
+				4E5F31662BC8BA0300356231 /* HeroiOS in Frameworks */,
+				4E5F31682BC8BA0700356231 /* HeroShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +243,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F30F32BC36D8A00356231 /* Heroes in Frameworks */,
+				4E5F316A2BC8BA1B00356231 /* HeroiOS in Frameworks */,
+				4E5F316C2BC8BA1F00356231 /* HeroShared in Frameworks */,
 				4E5F307B2BC35F3000356231 /* UniformTypeIdentifiers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,7 +253,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F30F12BC366C700356231 /* Heroes in Frameworks */,
+				4E5F316E2BC8BA2600356231 /* HeroiOS in Frameworks */,
+				4E5F31702BC8BA2A00356231 /* HeroShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,9 +262,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E5F31722BC8BA3600356231 /* HeroiOS in Frameworks */,
 				4E5F30A62BC35FFF00356231 /* UserNotificationsUI.framework in Frameworks */,
 				4E5F30A42BC35FFF00356231 /* UserNotifications.framework in Frameworks */,
-				4E5F30F92BC38C8000356231 /* Heroes in Frameworks */,
+				4E5F31742BC8BA3A00356231 /* HeroShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +273,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F30F52BC3701700356231 /* Heroes in Frameworks */,
+				4E5F31762BC8BA4500356231 /* HeroiOS in Frameworks */,
+				4E5F31782BC8BA4800356231 /* HeroShared in Frameworks */,
 				4E5F30BA2BC3602400356231 /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,7 +283,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F30DE2BC3623F00356231 /* Heroes in Frameworks */,
+				4E5F317A2BC8BA5100356231 /* HeroiOS in Frameworks */,
+				4E5F317C2BC8BA5400356231 /* HeroShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +299,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F31262BC42EAB00356231 /* Heroes in Frameworks */,
+				4E5F317E2BC8BA7900356231 /* HeroiOS in Frameworks */,
+				4E5F31802BC8BA7C00356231 /* HeroShared in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5F314E2BC83D0A00356231 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5F31822BC8BA8400356231 /* HeroShared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +327,7 @@
 				4E5F30BB2BC3602400356231 /* iMessage */,
 				4E5F30CF2BC3606300356231 /* Spotlight */,
 				4E5F31122BC4256500356231 /* AppClips */,
+				4E5F31522BC83D0A00356231 /* HeroesWatch Watch App */,
 				4E5F30792BC35F3000356231 /* Frameworks */,
 				4E5F30632BC35E9000356231 /* Products */,
 			);
@@ -292,6 +344,7 @@
 				4E5F30CE2BC3606300356231 /* Spotlight.appex */,
 				4E5F30E52BC3659600356231 /* NotificationService.appex */,
 				4E5F31112BC4256500356231 /* AppClips.app */,
+				4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -426,6 +479,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4E5F31522BC83D0A00356231 /* HeroesWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */,
+				4E5F31552BC83D0A00356231 /* ContentView.swift */,
+				4E5F31572BC83D0C00356231 /* Assets.xcassets */,
+				4E5F31592BC83D0C00356231 /* Preview Content */,
+			);
+			path = "HeroesWatch Watch App";
+			sourceTree = "<group>";
+		};
+		4E5F31592BC83D0C00356231 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,6 +510,7 @@
 				4E5F30602BC35E9000356231 /* Resources */,
 				4E5F308B2BC35F3000356231 /* Embed Foundation Extensions */,
 				4E5F31242BC4256700356231 /* Embed App Clips */,
+				4E5F315F2BC83D0C00356231 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -449,10 +522,12 @@
 				4E5F30D42BC3606300356231 /* PBXTargetDependency */,
 				4E5F30EB2BC3659600356231 /* PBXTargetDependency */,
 				4E5F311F2BC4256700356231 /* PBXTargetDependency */,
+				4E5F315D2BC83D0C00356231 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			packageProductDependencies = (
-				4E5F30DF2BC3636000356231 /* Heroes */,
+				4E5F31652BC8BA0300356231 /* HeroiOS */,
+				4E5F31672BC8BA0700356231 /* HeroShared */,
 			);
 			productName = Demo;
 			productReference = 4E5F30622BC35E9000356231 /* Swift Heroes.app */;
@@ -472,7 +547,8 @@
 			);
 			name = Action;
 			packageProductDependencies = (
-				4E5F30F22BC36D8A00356231 /* Heroes */,
+				4E5F31692BC8BA1B00356231 /* HeroiOS */,
+				4E5F316B2BC8BA1F00356231 /* HeroShared */,
 			);
 			productName = Action;
 			productReference = 4E5F30782BC35F3000356231 /* Action.appex */;
@@ -492,7 +568,8 @@
 			);
 			name = Share;
 			packageProductDependencies = (
-				4E5F30F02BC366C700356231 /* Heroes */,
+				4E5F316D2BC8BA2600356231 /* HeroiOS */,
+				4E5F316F2BC8BA2A00356231 /* HeroShared */,
 			);
 			productName = Share;
 			productReference = 4E5F30902BC35FAD00356231 /* Share.appex */;
@@ -512,7 +589,8 @@
 			);
 			name = Notification;
 			packageProductDependencies = (
-				4E5F30F82BC38C8000356231 /* Heroes */,
+				4E5F31712BC8BA3600356231 /* HeroiOS */,
+				4E5F31732BC8BA3A00356231 /* HeroShared */,
 			);
 			productName = Notification;
 			productReference = 4E5F30A22BC35FFF00356231 /* Notification.appex */;
@@ -532,7 +610,8 @@
 			);
 			name = iMessage;
 			packageProductDependencies = (
-				4E5F30F42BC3701700356231 /* Heroes */,
+				4E5F31752BC8BA4500356231 /* HeroiOS */,
+				4E5F31772BC8BA4800356231 /* HeroShared */,
 			);
 			productName = iMessage;
 			productReference = 4E5F30B82BC3602400356231 /* iMessage.appex */;
@@ -552,7 +631,8 @@
 			);
 			name = Spotlight;
 			packageProductDependencies = (
-				4E5F30DD2BC3623F00356231 /* Heroes */,
+				4E5F31792BC8BA5100356231 /* HeroiOS */,
+				4E5F317B2BC8BA5400356231 /* HeroShared */,
 			);
 			productName = Spotlight;
 			productReference = 4E5F30CE2BC3606300356231 /* Spotlight.appex */;
@@ -589,11 +669,32 @@
 			);
 			name = AppClips;
 			packageProductDependencies = (
-				4E5F31252BC42EAB00356231 /* Heroes */,
+				4E5F317D2BC8BA7900356231 /* HeroiOS */,
+				4E5F317F2BC8BA7C00356231 /* HeroShared */,
 			);
 			productName = AppClips;
 			productReference = 4E5F31112BC4256500356231 /* AppClips.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
+		4E5F31502BC83D0A00356231 /* HeroesWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E5F31622BC83D0C00356231 /* Build configuration list for PBXNativeTarget "HeroesWatch Watch App" */;
+			buildPhases = (
+				4E5F314D2BC83D0A00356231 /* Sources */,
+				4E5F314E2BC83D0A00356231 /* Frameworks */,
+				4E5F314F2BC83D0A00356231 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HeroesWatch Watch App";
+			packageProductDependencies = (
+				4E5F31812BC8BA8400356231 /* HeroShared */,
+			);
+			productName = "HeroesWatch Watch App";
+			productReference = 4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -629,6 +730,9 @@
 					4E5F31102BC4256500356231 = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					4E5F31502BC83D0A00356231 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 4E5F305D2BC35E9000356231 /* Build configuration list for PBXProject "Demo" */;
@@ -652,6 +756,7 @@
 				4E5F30B72BC3602400356231 /* iMessage */,
 				4E5F30CD2BC3606300356231 /* Spotlight */,
 				4E5F31102BC4256500356231 /* AppClips */,
+				4E5F31502BC83D0A00356231 /* HeroesWatch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -724,6 +829,15 @@
 			files = (
 				4E5F311B2BC4256700356231 /* Preview Assets.xcassets in Resources */,
 				4E5F31182BC4256700356231 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E5F314F2BC83D0A00356231 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5F315B2BC83D0C00356231 /* Preview Assets.xcassets in Resources */,
+				4E5F31582BC83D0C00356231 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +915,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E5F314D2BC83D0A00356231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5F31562BC83D0A00356231 /* ContentView.swift in Sources */,
+				4E5F31542BC83D0A00356231 /* HeroesWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -838,6 +961,11 @@
 			isa = PBXTargetDependency;
 			target = 4E5F31102BC4256500356231 /* AppClips */;
 			targetProxy = 4E5F311E2BC4256700356231 /* PBXContainerItemProxy */;
+		};
+		4E5F315D2BC83D0C00356231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E5F31502BC83D0A00356231 /* HeroesWatch Watch App */;
+			targetProxy = 4E5F315C2BC83D0C00356231 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1445,6 +1573,67 @@
 			};
 			name = Release;
 		};
+		4E5F31602BC83D0C00356231 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeroesWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = SP7UUHBXPL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Heroes";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.swiftheroes.Demo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		4E5F31612BC83D0C00356231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeroesWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = SP7UUHBXPL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Swift Heroes";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.swiftheroes.Demo;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1529,36 +1718,77 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4E5F31622BC83D0C00356231 /* Build configuration list for PBXNativeTarget "HeroesWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E5F31602BC83D0C00356231 /* Debug */,
+				4E5F31612BC83D0C00356231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4E5F30DD2BC3623F00356231 /* Heroes */ = {
+		4E5F31652BC8BA0300356231 /* HeroiOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroiOS;
 		};
-		4E5F30DF2BC3636000356231 /* Heroes */ = {
+		4E5F31672BC8BA0700356231 /* HeroShared */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroShared;
 		};
-		4E5F30F02BC366C700356231 /* Heroes */ = {
+		4E5F31692BC8BA1B00356231 /* HeroiOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroiOS;
 		};
-		4E5F30F22BC36D8A00356231 /* Heroes */ = {
+		4E5F316B2BC8BA1F00356231 /* HeroShared */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroShared;
 		};
-		4E5F30F42BC3701700356231 /* Heroes */ = {
+		4E5F316D2BC8BA2600356231 /* HeroiOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroiOS;
 		};
-		4E5F30F82BC38C8000356231 /* Heroes */ = {
+		4E5F316F2BC8BA2A00356231 /* HeroShared */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroShared;
 		};
-		4E5F31252BC42EAB00356231 /* Heroes */ = {
+		4E5F31712BC8BA3600356231 /* HeroiOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Heroes;
+			productName = HeroiOS;
+		};
+		4E5F31732BC8BA3A00356231 /* HeroShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroShared;
+		};
+		4E5F31752BC8BA4500356231 /* HeroiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroiOS;
+		};
+		4E5F31772BC8BA4800356231 /* HeroShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroShared;
+		};
+		4E5F31792BC8BA5100356231 /* HeroiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroiOS;
+		};
+		4E5F317B2BC8BA5400356231 /* HeroShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroShared;
+		};
+		4E5F317D2BC8BA7900356231 /* HeroiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroiOS;
+		};
+		4E5F317F2BC8BA7C00356231 /* HeroShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroShared;
+		};
+		4E5F31812BC8BA8400356231 /* HeroShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroShared;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

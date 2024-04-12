@@ -9,9 +9,15 @@ import Foundation
 import SwiftUI
 
 public struct Speaker: Identifiable, Equatable {
+    public init(id: String, name: String, image: Image) {
+        self.id = id
+        self.name = name
+        self.image = image
+    }
+    
     public var id: String
-    var name: String
-    var image: Image
+    public var name: String
+    public var image: Image
 }
 
 public extension Speaker {

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Observation
+import HeroShared
 
 let activityType = "com.swiftheroes.speakers"
 
@@ -37,28 +38,7 @@ public struct SpeakerListView: View {
             .navigationTitle("Speakers")
             .toolbarBackground(Color.heroOrange, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Text("👓")
-                        .font(.largeTitle)
-                }
-                #if os(iOS)
-                ToolbarItem(placement: .topBarTrailing) {
-                    if screenManager.showScreen {
-                        Button(action: {
-                            //screenManager.changeSpeaker()
-                            isSheetPresented = true
-                        }, label: {
-                            Image(systemName: "airplayvideo")
-                                .font(.title3)
-                                .symbolRenderingMode(.palette)
-                                .foregroundStyle(.black, .blue)
-                                .symbolEffect(.pulse.byLayer, isActive: true)
-                        })
-                    }
-                }
-                #endif
-            }
+            .externalScreenToolbar(screenManager: screenManager, showingSheet: $isSheetPresented)
         }
         #if os(iOS)
         .sheet(isPresented: $isSheetPresented) {

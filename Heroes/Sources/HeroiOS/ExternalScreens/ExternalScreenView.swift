@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import HeroShared
 
 public struct ExternalScreenView: View {
     public init() {}

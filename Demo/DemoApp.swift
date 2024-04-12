@@ -9,7 +9,8 @@ import SwiftUI
 import UserNotifications
 import CoreSpotlight
 import Observation
-import Heroes
+import HeroiOS
+import HeroShared
 
 @main
 struct DemoApp: App {

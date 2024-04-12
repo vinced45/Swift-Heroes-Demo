@@ -7,7 +7,8 @@
 
 import SwiftUI
 import Observation
-import Heroes
+import HeroiOS
+import HeroShared
 
 @main
 struct AppClipsApp: App {
