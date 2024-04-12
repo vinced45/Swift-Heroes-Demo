@@ -1,6 +1,7 @@
 import UIKit
 import SwiftUI
 
+#if os(iOS)
 public extension UIViewController {
     func add(swiftUIView: AnyView) {
         let childView = UIHostingController(rootView: AnyView(swiftUIView))
@@ -16,3 +17,4 @@ public extension UIViewController {
         childView.view.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
     }
 }
+#endif

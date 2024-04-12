@@ -1,5 +1,6 @@
 import Foundation
 import MobileCoreServices
+#if os(iOS)
 import CoreSpotlight
 import SwiftUI
 
@@ -33,3 +34,4 @@ public class Heroes {
         }
     }
 }
+#endif

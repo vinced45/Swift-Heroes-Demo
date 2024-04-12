@@ -2,36 +2,35 @@
 //  SwiftUIView 2.swift
 //  
 //
-//  Created by Vince Davis on 4/9/24.
+//  Created by Vince Davis on 4/10/24.
 //
 
 import SwiftUI
-import Observation
 
-let activityType = "com.swiftheroes.speakers"
-
-public struct SpeakerListView: View {
+public struct ExtensionListView: View {
     @Environment(ScreenManager.self) var screenManager: ScreenManager
     //@Bindable var screenManager: ScreenManager
     //@Environment(QuickActionsManager.self) var quickActionsManager: QuickActionsManager
+    #if os(iOS)
     @State var quickActionsManager = QuickActionsManager.shared
+    #endif
     @State private var isSheetPresented = false
     
     public init() {}
     
     public var body: some View {
         NavigationStack {
-            List(Speaker.all) { speaker in
-                HStack {
-                    speaker.image
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    
-                    Text(speaker.name)
-                }
+            List(ExtensionItem.all) { item in
+                Label(title: {
+                    Text(item.name)
+                }, icon: {
+                    item.image.styled()
+                })
             }
+            #if os(iOS)
             .listStyle(.grouped)
-            .navigationTitle("Speakers")
+            #endif
+            .navigationTitle("Extensions")
             .toolbarBackground(Color.heroOrange, for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
@@ -39,6 +38,7 @@ public struct SpeakerListView: View {
                     Text("👓")
                         .font(.largeTitle)
                 }
+                #if os(iOS)
                 ToolbarItem(placement: .topBarTrailing) {
                     if screenManager.showScreen {
                         Button(action: {
@@ -53,13 +53,16 @@ public struct SpeakerListView: View {
                         })
                     }
                 }
+                #endif
             }
         }
+        #if os(iOS)
         .sheet(isPresented: $isSheetPresented) {
             Text("Half screen content here")
                .presentationDetents([.fraction(0.33), .medium])
                //.interactiveDismissDisabled(true)
          }
+        #endif
         .userActivity(activityType, element: "1", { element, activity in
             let bundleid = Bundle.main.bundleIdentifier ?? ""
                         
@@ -77,6 +80,7 @@ public struct SpeakerListView: View {
             
             logUserActivity(userActivity, label: "on activity")
         })
+        #if os(iOS)
         .onChange(of: quickActionsManager.quickAction) { _, _ in
             print("Change current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
         }
@@ -86,6 +90,7 @@ public struct SpeakerListView: View {
         .onAppear {
             print("current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
         }
+        #endif
     }
     
     func logUserActivity(_ activity: NSUserActivity, label: String = "") {
@@ -95,6 +100,8 @@ public struct SpeakerListView: View {
 }
 
 #Preview {
-    SpeakerListView()
+    ExtensionListView()
+        #if os(iOS)
         .environment(ScreenManager())
+        #endif
 }

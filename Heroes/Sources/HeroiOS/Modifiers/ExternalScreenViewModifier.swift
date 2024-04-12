@@ -3,7 +3,6 @@ import Combine
 #if os(iOS)
 import UIKit
 
-
 public struct ExternalScreenViewModifier<ScreenContent: View>: ViewModifier where ScreenContent: View {
     @Binding var showingExternalScreen: Bool
     let screenContent: () -> ScreenContent

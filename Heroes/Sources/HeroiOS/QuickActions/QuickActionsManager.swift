@@ -7,6 +7,8 @@
 
 import Foundation
 import Observation
+
+#if os(iOS)
 import UIKit
 
 @Observable
@@ -43,3 +45,4 @@ public enum QuickAction: String, Hashable {
     case search
     case bookmark
 }
+#endif
