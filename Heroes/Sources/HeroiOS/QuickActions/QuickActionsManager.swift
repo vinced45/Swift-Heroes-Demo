@@ -10,6 +10,7 @@ import Observation
 
 #if os(iOS)
 import UIKit
+#endif
 
 @Observable
 public class QuickActionsManager {
@@ -18,16 +19,16 @@ public class QuickActionsManager {
     
     public var quickAction: QuickAction? = nil
 
-    public func handleQaItem(_ item: UIApplicationShortcutItem) {
-        print("handed quick action for item \(item.localizedTitle)")
-        if item.type == "Search" {
+    public func handleQaItem(type: String) {
+        if  type == "Search" {
             quickAction = .search
-        } else if item.type == "Send" {
+        } else if type == "Send" {
             quickAction = .bookmark
         }
     }
     
     public func addQuickActions() {
+        #if os(iOS)
         UIApplication.shared.shortcutItems = [
             UIApplicationShortcutItem(type: "Search",
                                       localizedTitle: "Searhing",
@@ -38,6 +39,7 @@ public class QuickActionsManager {
                                       localizedSubtitle: "Bookmark me",
                                       icon: UIApplicationShortcutIcon.init(type: .bookmark)),
         ]
+        #endif
     }
 }
 
@@ -45,4 +47,3 @@ public enum QuickAction: String, Hashable {
     case search
     case bookmark
 }
-#endif

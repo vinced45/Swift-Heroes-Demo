@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ContentView: View {
     var body: some View {
@@ -14,8 +15,24 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            Button("Tap Me", action: auth)
         }
         .padding()
+        .task {
+            let center = UNUserNotificationCenter.current()
+            _ = try? await center.requestAuthorization(
+                options: [.alert, .sound, .badge]
+            )
+        }
+    }
+    
+    func auth() {
+        task {
+            let center = UNUserNotificationCenter.current()
+            _ = try? await center.requestAuthorization(
+                options: [.alert, .sound, .badge]
+            )
+        }
     }
 }
 

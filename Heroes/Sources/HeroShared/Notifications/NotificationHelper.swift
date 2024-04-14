@@ -6,6 +6,7 @@
 //
 
 import Foundation
+#if !os(tvOS)
 import UserNotifications
 
 public struct NotificationHelper {
@@ -66,3 +67,4 @@ public struct NotificationHelper {
             completionHandler: {_, _ in })
     }
 }
+#endif

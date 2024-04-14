@@ -10,13 +10,14 @@ import Combine
 
 #if os(iOS)
 import UIKit
+#endif
 
 struct ForegroundViewModifier<ScreenContent: View>: ViewModifier where ScreenContent: View {
-    @Environment(\.scenePhase) var scenePhase
-    
     @Binding var inBackground: Bool
-    
     let screenContent: () -> ScreenContent
+    
+    #if os(iOS)
+    @Environment(\.scenePhase) var scenePhase
     
     func body(content: Content) -> some View {
         content
@@ -39,5 +40,9 @@ struct ForegroundViewModifier<ScreenContent: View>: ViewModifier where ScreenCon
                 transaction.disablesAnimations = true
             })
     }
+    #else
+    func body(content: Content) -> some View {
+        content
+    }
+    #endif
 }
-#endif

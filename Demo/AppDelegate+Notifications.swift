@@ -6,24 +6,11 @@
 //
 
 import Foundation
-import UIKit
+
+#if os(iOS) || os(visionOS) || os(macOS)
 import UserNotifications
 
 extension AppDelegate {
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let tokenChars = (deviceToken as NSData).bytes.bindMemory(to: CChar.self, capacity: deviceToken.count)
-        var tokenString = ""
-        for i in 0..<deviceToken.count {
-            tokenString += String(format: "%02.2hhx", arguments: [tokenChars[i]])
-        }
-        print("Successfully registered for notifications!")
-        print("Device Token:", tokenString)
-    }
-
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print("Failed to register for notifications: \(error.localizedDescription)")
-    }
-    
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         let userInfo = notification.request.content.userInfo
         print("Receive notification in the foreground \(userInfo)")
@@ -56,3 +43,4 @@ extension AppDelegate {
         completionHandler()
     }
 }
+#endif

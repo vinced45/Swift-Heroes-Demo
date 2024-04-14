@@ -23,8 +23,11 @@ public struct Speaker: Identifiable, Equatable {
 public extension Speaker {
     static var all: [Speaker] {
         return [
-            .init(id: "1", name: "Alex", image: .alex),
-            .init(id: "2", name: "Alberto", image: .alberto)
+            .alex,
+            .alberto
         ]
     }
+    
+    static var alex: Speaker = .init(id: "1", name: "Alex", image: .alex)
+    static var alberto: Speaker = .init(id: "2", name: "Alberto", image: .alberto)
 }

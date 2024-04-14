@@ -15,7 +15,7 @@ public struct ExternalScreenView: View {
     @Environment(ScreenManager.self)
     public var screenManager: ScreenManager
     
-    @State var speaker: Speaker = Speaker(id: "1", name: "Alex", image: .alex)
+    @State var speaker: Speaker = .alex
     
     public var body: some View {
         ZStack {

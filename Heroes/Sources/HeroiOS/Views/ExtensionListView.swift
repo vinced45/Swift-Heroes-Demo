@@ -12,9 +12,7 @@ public struct ExtensionListView: View {
     @Environment(ScreenManager.self) var screenManager: ScreenManager
     //@Bindable var screenManager: ScreenManager
     //@Environment(QuickActionsManager.self) var quickActionsManager: QuickActionsManager
-    #if os(iOS)
     @State var quickActionsManager = QuickActionsManager.shared
-    #endif
     @State private var isSheetPresented = false
     
     public init() {}
@@ -22,27 +20,41 @@ public struct ExtensionListView: View {
     public var body: some View {
         NavigationStack {
             List(ExtensionItem.all) { item in
-                Label(title: {
-                    Text(item.name)
-                }, icon: {
-                    item.image.styled()
-                })
+                HStack {
+                    Label(title: {
+                        Text(item.name)
+                    }, icon: {
+                        item.image.styled()
+                    })
+                    Spacer()
+                    
+                    ZStack {
+                        Rectangle()
+                            .foregroundColor(Color.heroOrange.opacity(0.3))
+                            .cornerRadius(10)
+                            
+                        
+                        HStack(spacing: 2) {
+                            Image(systemName: "iphone")
+                            Image(systemName: "applewatch")
+                            Image(systemName: "ipad")
+                            Image(systemName: "macbook")
+                            Image(systemName: "appletv")
+                            Image(systemName: "visionpro")
+                        }
+                    }
+                    .frame(width: 150, height: 30)
+                }
             }
-            #if os(iOS)
-            .listStyle(.grouped)
-            #endif
+            .customListStyle()
             .navigationTitle("Extensions")
-            .toolbarBackground(Color.heroOrange.gradient, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
+            .customToolBarStyle()
             .externalScreenToolbar(screenManager: screenManager, showingSheet: $isSheetPresented)
         }
-        #if os(iOS)
         .sheet(isPresented: $isSheetPresented) {
             Text("Half screen content here")
                .presentationDetents([.fraction(0.33), .medium])
-               //.interactiveDismissDisabled(true)
          }
-        #endif
         .userActivity(activityType, element: "1", { element, activity in
             let bundleid = Bundle.main.bundleIdentifier ?? ""
                         
@@ -60,7 +72,6 @@ public struct ExtensionListView: View {
             
             logUserActivity(userActivity, label: "on activity")
         })
-        #if os(iOS)
         .onChange(of: quickActionsManager.quickAction) { _, _ in
             print("Change current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
         }
@@ -70,7 +81,6 @@ public struct ExtensionListView: View {
         .onAppear {
             print("current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
         }
-        #endif
     }
     
     func logUserActivity(_ activity: NSUserActivity, label: String = "") {
@@ -81,7 +91,5 @@ public struct ExtensionListView: View {
 
 #Preview {
     ExtensionListView()
-        #if os(iOS)
         .environment(ScreenManager())
-        #endif
 }

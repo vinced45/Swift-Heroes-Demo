@@ -2,11 +2,13 @@ import SwiftUI
 import Combine
 #if os(iOS)
 import UIKit
+#endif
 
 public struct ExternalScreenViewModifier<ScreenContent: View>: ViewModifier where ScreenContent: View {
     @Binding var showingExternalScreen: Bool
     let screenContent: () -> ScreenContent
     
+    #if os(iOS)
     @State var additionalWindows: [UIWindow] = []
     
     public func body(content: Content) -> some View {
@@ -55,5 +57,10 @@ public struct ExternalScreenViewModifier<ScreenContent: View>: ViewModifier wher
         additionalWindows.removeAll { $0.screen == screen }
         showingExternalScreen = false
     }
+    #else
+    public func body(content: Content) -> some View {
+        content
+    }
+    #endif
 }
-#endif
+

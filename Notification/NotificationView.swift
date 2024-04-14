@@ -113,7 +113,9 @@ public struct NotificationView: View {
                 .tag(i)
             }
         }
+        #if os(iOS)
         .tabViewStyle(PageTabViewStyle())
+        #endif
         .animation(.easeInOut) // 2
         .transition(.slide) // 3
     }

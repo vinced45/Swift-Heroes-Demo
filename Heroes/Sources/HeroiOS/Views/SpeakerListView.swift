@@ -12,13 +12,12 @@ import HeroShared
 let activityType = "com.swiftheroes.speakers"
 
 public struct SpeakerListView: View {
-    #if os(iOS)
     @Environment(ScreenManager.self) var screenManager: ScreenManager
     //@Bindable var screenManager: ScreenManager
     //@Environment(QuickActionsManager.self) var quickActionsManager: QuickActionsManager
     @State var quickActionsManager = QuickActionsManager.shared
     @State private var isSheetPresented = false
-    #endif
+
     public init() {}
     
     public var body: some View {
@@ -32,21 +31,16 @@ public struct SpeakerListView: View {
                     Text(speaker.name)
                 }
             }
-            #if os(iOS)
-            .listStyle(.grouped)
-            #endif
+            .customListStyle()
             .navigationTitle("Speakers")
-            .toolbarBackground(Color.heroOrange, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
+            .customToolBarStyle()
             .externalScreenToolbar(screenManager: screenManager, showingSheet: $isSheetPresented)
         }
-        #if os(iOS)
         .sheet(isPresented: $isSheetPresented) {
             Text("Half screen content here")
                .presentationDetents([.fraction(0.33), .medium])
                //.interactiveDismissDisabled(true)
          }
-        #endif
         .userActivity(activityType, element: "1", { element, activity in
             let bundleid = Bundle.main.bundleIdentifier ?? ""
                         
@@ -64,7 +58,6 @@ public struct SpeakerListView: View {
             
             logUserActivity(userActivity, label: "on activity")
         })
-        #if os(iOS)
         .onChange(of: quickActionsManager.quickAction) { _, _ in
             print("Change current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
         }
@@ -74,7 +67,6 @@ public struct SpeakerListView: View {
         .onAppear {
             print("current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
         }
-        #endif
     }
     
     func logUserActivity(_ activity: NSUserActivity, label: String = "") {

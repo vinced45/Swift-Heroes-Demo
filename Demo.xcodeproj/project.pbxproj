@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E2904042BCB768E00752A3F /* NotificationViewController+UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */; };
 		4E5F30662BC35E9000356231 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30652BC35E9000356231 /* DemoApp.swift */; };
 		4E5F30682BC35E9000356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30672BC35E9000356231 /* ContentView.swift */; };
 		4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30692BC35E9200356231 /* Assets.xcassets */; };
@@ -14,36 +15,28 @@
 		4E5F307B2BC35F3000356231 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F307A2BC35F3000356231 /* UniformTypeIdentifiers.framework */; };
 		4E5F307E2BC35F3000356231 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F307D2BC35F3000356231 /* Media.xcassets */; };
 		4E5F30802BC35F3000356231 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F307F2BC35F3000356231 /* ActionViewController.swift */; };
-		4E5F30872BC35F3000356231 /* Action.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30782BC35F3000356231 /* Action.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F30872BC35F3000356231 /* Action.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30782BC35F3000356231 /* Action.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30932BC35FAD00356231 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30922BC35FAD00356231 /* ShareViewController.swift */; };
-		4E5F309A2BC35FAD00356231 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30902BC35FAD00356231 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F309A2BC35FAD00356231 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30902BC35FAD00356231 /* Share.appex */; platformFilters = (ios, macos, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30A42BC35FFF00356231 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F30A32BC35FFF00356231 /* UserNotifications.framework */; };
 		4E5F30A62BC35FFF00356231 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F30A52BC35FFF00356231 /* UserNotificationsUI.framework */; };
 		4E5F30A92BC35FFF00356231 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30A82BC35FFF00356231 /* NotificationViewController.swift */; };
-		4E5F30B02BC35FFF00356231 /* Notification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30A22BC35FFF00356231 /* Notification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F30B02BC35FFF00356231 /* Notification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30A22BC35FFF00356231 /* Notification.appex */; platformFilters = (ios, xros, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30BA2BC3602400356231 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F30B92BC3602400356231 /* Messages.framework */; };
 		4E5F30BD2BC3602400356231 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30BC2BC3602400356231 /* MessagesViewController.swift */; };
 		4E5F30C22BC3602600356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30C12BC3602600356231 /* Assets.xcassets */; };
-		4E5F30C62BC3602600356231 /* iMessage.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30B82BC3602400356231 /* iMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F30C62BC3602600356231 /* iMessage.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30B82BC3602400356231 /* iMessage.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30D12BC3606300356231 /* ImportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30D02BC3606300356231 /* ImportExtension.swift */; };
-		4E5F30D52BC3606300356231 /* Spotlight.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30CE2BC3606300356231 /* Spotlight.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F30D52BC3606300356231 /* Spotlight.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30CE2BC3606300356231 /* Spotlight.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30E82BC3659600356231 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30E72BC3659600356231 /* NotificationService.swift */; };
-		4E5F30EC2BC3659600356231 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30E52BC3659600356231 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F30EC2BC3659600356231 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30E52BC3659600356231 /* NotificationService.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30F72BC380BF00356231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30F62BC380BF00356231 /* AppDelegate.swift */; };
-		4E5F31042BC420D500356231 /* pretravel-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FA2BC420D500356231 /* pretravel-1.png */; };
-		4E5F31052BC420D500356231 /* pretravel-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FB2BC420D500356231 /* pretravel-2.png */; };
-		4E5F31062BC420D500356231 /* pretravel-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FC2BC420D500356231 /* pretravel-3.png */; };
-		4E5F31072BC420D500356231 /* pretravel-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FD2BC420D500356231 /* pretravel-4.png */; };
-		4E5F31082BC420D500356231 /* pretravel-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FE2BC420D500356231 /* pretravel-5.png */; };
-		4E5F31092BC420D500356231 /* smallvid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30FF2BC420D500356231 /* smallvid.mp4 */; };
-		4E5F310A2BC420D500356231 /* test.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31002BC420D500356231 /* test.apns */; };
-		4E5F310B2BC420D500356231 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31012BC420D500356231 /* video.mp4 */; };
 		4E5F310C2BC420D500356231 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31032BC420D500356231 /* NotificationView.swift */; };
 		4E5F31142BC4256500356231 /* AppClipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31132BC4256500356231 /* AppClipsApp.swift */; };
 		4E5F31162BC4256500356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31152BC4256500356231 /* ContentView.swift */; };
 		4E5F31182BC4256700356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31172BC4256700356231 /* Assets.xcassets */; };
 		4E5F311B2BC4256700356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F311A2BC4256700356231 /* Preview Assets.xcassets */; };
-		4E5F31202BC4256700356231 /* AppClips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4E5F31112BC4256500356231 /* AppClips.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F31202BC4256700356231 /* AppClips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4E5F31112BC4256500356231 /* AppClips.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F312E2BC7165100356231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F312D2BC7165100356231 /* SceneDelegate.swift */; };
 		4E5F31302BC7382D00356231 /* AppDelegate+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */; };
 		4E5F31322BC7389600356231 /* AppDelegate+QuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */; };
@@ -51,7 +44,7 @@
 		4E5F31562BC83D0A00356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31552BC83D0A00356231 /* ContentView.swift */; };
 		4E5F31582BC83D0C00356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31572BC83D0C00356231 /* Assets.xcassets */; };
 		4E5F315B2BC83D0C00356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */; };
-		4E5F315E2BC83D0C00356231 /* HeroesWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F315E2BC83D0C00356231 /* HeroesWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F31662BC8BA0300356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31652BC8BA0300356231 /* HeroiOS */; };
 		4E5F31682BC8BA0700356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31672BC8BA0700356231 /* HeroShared */; };
 		4E5F316A2BC8BA1B00356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31692BC8BA1B00356231 /* HeroiOS */; };
@@ -67,6 +60,15 @@
 		4E5F317E2BC8BA7900356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317D2BC8BA7900356231 /* HeroiOS */; };
 		4E5F31802BC8BA7C00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317F2BC8BA7C00356231 /* HeroShared */; };
 		4E5F31822BC8BA8400356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31812BC8BA8400356231 /* HeroShared */; };
+		4E8F644B2BCA3204005F55C7 /* test.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F644A2BCA3204005F55C7 /* test.apns */; };
+		4E8F644D2BCA346A005F55C7 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F644C2BCA346A005F55C7 /* PushNotificationPayload.apns */; };
+		4ED7315A2BCB95FF00CE014F /* pretravel-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731522BCB95FF00CE014F /* pretravel-1.png */; };
+		4ED7315B2BCB95FF00CE014F /* pretravel-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731532BCB95FF00CE014F /* pretravel-2.png */; };
+		4ED7315C2BCB95FF00CE014F /* pretravel-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731542BCB95FF00CE014F /* pretravel-3.png */; };
+		4ED7315D2BCB95FF00CE014F /* pretravel-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731552BCB95FF00CE014F /* pretravel-4.png */; };
+		4ED7315E2BCB95FF00CE014F /* pretravel-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731562BCB95FF00CE014F /* pretravel-5.png */; };
+		4ED7315F2BCB95FF00CE014F /* smallvid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731572BCB95FF00CE014F /* smallvid.mp4 */; };
+		4ED731602BCB95FF00CE014F /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731582BCB95FF00CE014F /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +172,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationViewController+UserNotifications.swift"; sourceTree = "<group>"; };
 		4E5F30622BC35E9000356231 /* Swift Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F30652BC35E9000356231 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		4E5F30672BC35E9000356231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -202,14 +205,6 @@
 		4E5F30E72BC3659600356231 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		4E5F30E92BC3659600356231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E5F30F62BC380BF00356231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4E5F30FA2BC420D500356231 /* pretravel-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-1.png"; sourceTree = "<group>"; };
-		4E5F30FB2BC420D500356231 /* pretravel-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-2.png"; sourceTree = "<group>"; };
-		4E5F30FC2BC420D500356231 /* pretravel-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-3.png"; sourceTree = "<group>"; };
-		4E5F30FD2BC420D500356231 /* pretravel-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-4.png"; sourceTree = "<group>"; };
-		4E5F30FE2BC420D500356231 /* pretravel-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-5.png"; sourceTree = "<group>"; };
-		4E5F30FF2BC420D500356231 /* smallvid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = smallvid.mp4; sourceTree = "<group>"; };
-		4E5F31002BC420D500356231 /* test.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.apns; sourceTree = "<group>"; };
-		4E5F31012BC420D500356231 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		4E5F31032BC420D500356231 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		4E5F31112BC4256500356231 /* AppClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F31132BC4256500356231 /* AppClipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipsApp.swift; sourceTree = "<group>"; };
@@ -227,6 +222,16 @@
 		4E5F31552BC83D0A00356231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E5F31572BC83D0C00356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E8F644A2BCA3204005F55C7 /* test.apns */ = {isa = PBXFileReference; lastKnownFileType = text; name = test.apns; path = Heroes/test.apns; sourceTree = SOURCE_ROOT; };
+		4E8F644C2BCA346A005F55C7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4E8F644E2BCA3654005F55C7 /* HeroesWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeroesWatch Watch App.entitlements"; sourceTree = "<group>"; };
+		4ED731522BCB95FF00CE014F /* pretravel-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-1.png"; sourceTree = "<group>"; };
+		4ED731532BCB95FF00CE014F /* pretravel-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-2.png"; sourceTree = "<group>"; };
+		4ED731542BCB95FF00CE014F /* pretravel-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-3.png"; sourceTree = "<group>"; };
+		4ED731552BCB95FF00CE014F /* pretravel-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-4.png"; sourceTree = "<group>"; };
+		4ED731562BCB95FF00CE014F /* pretravel-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-5.png"; sourceTree = "<group>"; };
+		4ED731572BCB95FF00CE014F /* smallvid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = smallvid.mp4; sourceTree = "<group>"; };
+		4ED731582BCB95FF00CE014F /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,9 +412,10 @@
 		4E5F30A72BC35FFF00356231 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
-				4E5F31022BC420D500356231 /* Resources */,
+				4ED731592BCB95FF00CE014F /* Resources */,
 				4E5F31032BC420D500356231 /* NotificationView.swift */,
 				4E5F30A82BC35FFF00356231 /* NotificationViewController.swift */,
+				4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */,
 				4E5F30AD2BC35FFF00356231 /* Info.plist */,
 			);
 			path = Notification;
@@ -443,21 +449,6 @@
 			path = NotificationService;
 			sourceTree = "<group>";
 		};
-		4E5F31022BC420D500356231 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4E5F30FA2BC420D500356231 /* pretravel-1.png */,
-				4E5F30FB2BC420D500356231 /* pretravel-2.png */,
-				4E5F30FC2BC420D500356231 /* pretravel-3.png */,
-				4E5F30FD2BC420D500356231 /* pretravel-4.png */,
-				4E5F30FE2BC420D500356231 /* pretravel-5.png */,
-				4E5F30FF2BC420D500356231 /* smallvid.mp4 */,
-				4E5F31002BC420D500356231 /* test.apns */,
-				4E5F31012BC420D500356231 /* video.mp4 */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		4E5F31122BC4256500356231 /* AppClips */ = {
 			isa = PBXGroup;
 			children = (
@@ -482,10 +473,13 @@
 		4E5F31522BC83D0A00356231 /* HeroesWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				4E8F644E2BCA3654005F55C7 /* HeroesWatch Watch App.entitlements */,
 				4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */,
 				4E5F31552BC83D0A00356231 /* ContentView.swift */,
 				4E5F31572BC83D0C00356231 /* Assets.xcassets */,
 				4E5F31592BC83D0C00356231 /* Preview Content */,
+				4E8F644A2BCA3204005F55C7 /* test.apns */,
+				4E8F644C2BCA346A005F55C7 /* PushNotificationPayload.apns */,
 			);
 			path = "HeroesWatch Watch App";
 			sourceTree = "<group>";
@@ -496,6 +490,20 @@
 				4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4ED731592BCB95FF00CE014F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4ED731522BCB95FF00CE014F /* pretravel-1.png */,
+				4ED731532BCB95FF00CE014F /* pretravel-2.png */,
+				4ED731542BCB95FF00CE014F /* pretravel-3.png */,
+				4ED731552BCB95FF00CE014F /* pretravel-4.png */,
+				4ED731562BCB95FF00CE014F /* pretravel-5.png */,
+				4ED731572BCB95FF00CE014F /* smallvid.mp4 */,
+				4ED731582BCB95FF00CE014F /* video.mp4 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -790,14 +798,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F31072BC420D500356231 /* pretravel-4.png in Resources */,
-				4E5F31082BC420D500356231 /* pretravel-5.png in Resources */,
-				4E5F31052BC420D500356231 /* pretravel-2.png in Resources */,
-				4E5F31042BC420D500356231 /* pretravel-1.png in Resources */,
-				4E5F31062BC420D500356231 /* pretravel-3.png in Resources */,
-				4E5F31092BC420D500356231 /* smallvid.mp4 in Resources */,
-				4E5F310A2BC420D500356231 /* test.apns in Resources */,
-				4E5F310B2BC420D500356231 /* video.mp4 in Resources */,
+				4ED7315D2BCB95FF00CE014F /* pretravel-4.png in Resources */,
+				4ED7315E2BCB95FF00CE014F /* pretravel-5.png in Resources */,
+				4ED7315B2BCB95FF00CE014F /* pretravel-2.png in Resources */,
+				4ED7315A2BCB95FF00CE014F /* pretravel-1.png in Resources */,
+				4ED731602BCB95FF00CE014F /* video.mp4 in Resources */,
+				4ED7315C2BCB95FF00CE014F /* pretravel-3.png in Resources */,
+				4ED7315F2BCB95FF00CE014F /* smallvid.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,7 +844,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5F315B2BC83D0C00356231 /* Preview Assets.xcassets in Resources */,
+				4E8F644D2BCA346A005F55C7 /* PushNotificationPayload.apns in Resources */,
 				4E5F31582BC83D0C00356231 /* Assets.xcassets in Resources */,
+				4E8F644B2BCA3204005F55C7 /* test.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -879,6 +888,7 @@
 			files = (
 				4E5F30A92BC35FFF00356231 /* NotificationViewController.swift in Sources */,
 				4E5F310C2BC420D500356231 /* NotificationView.swift in Sources */,
+				4E2904042BCB768E00752A3F /* NotificationViewController+UserNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,41 +939,55 @@
 /* Begin PBXTargetDependency section */
 		4E5F30862BC35F3000356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4E5F30772BC35F3000356231 /* Action */;
 			targetProxy = 4E5F30852BC35F3000356231 /* PBXContainerItemProxy */;
 		};
 		4E5F30992BC35FAD00356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+				macos,
+			);
 			target = 4E5F308F2BC35FAD00356231 /* Share */;
 			targetProxy = 4E5F30982BC35FAD00356231 /* PBXContainerItemProxy */;
 		};
 		4E5F30AF2BC35FFF00356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilters = (
+				ios,
+				xros,
+			);
 			target = 4E5F30A12BC35FFF00356231 /* Notification */;
 			targetProxy = 4E5F30AE2BC35FFF00356231 /* PBXContainerItemProxy */;
 		};
 		4E5F30C52BC3602600356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4E5F30B72BC3602400356231 /* iMessage */;
 			targetProxy = 4E5F30C42BC3602600356231 /* PBXContainerItemProxy */;
 		};
 		4E5F30D42BC3606300356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4E5F30CD2BC3606300356231 /* Spotlight */;
 			targetProxy = 4E5F30D32BC3606300356231 /* PBXContainerItemProxy */;
 		};
 		4E5F30EB2BC3659600356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4E5F30E42BC3659600356231 /* NotificationService */;
 			targetProxy = 4E5F30EA2BC3659600356231 /* PBXContainerItemProxy */;
 		};
 		4E5F311F2BC4256700356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4E5F31102BC4256500356231 /* AppClips */;
 			targetProxy = 4E5F311E2BC4256700356231 /* PBXContainerItemProxy */;
 		};
 		4E5F315D2BC83D0C00356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 4E5F31502BC83D0A00356231 /* HeroesWatch Watch App */;
 			targetProxy = 4E5F315C2BC83D0C00356231 /* PBXContainerItemProxy */;
 		};
@@ -1099,6 +1123,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -1117,10 +1142,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo;
 				PRODUCT_NAME = "Swift Heroes";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 17.2;
 			};
 			name = Debug;
 		};
@@ -1139,6 +1168,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -1157,10 +1187,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo;
 				PRODUCT_NAME = "Swift Heroes";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,3,7";
+				TVOS_DEPLOYMENT_TARGET = 17.2;
 			};
 			name = Release;
 		};
@@ -1185,6 +1219,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1212,6 +1250,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1240,7 +1282,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1271,7 +1313,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1285,6 +1327,7 @@
 		4E5F30B22BC35FFF00356231 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SP7UUHBXPL;
@@ -1301,17 +1344,23 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.Notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
 		4E5F30B32BC35FFF00356231 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SP7UUHBXPL;
@@ -1328,11 +1377,16 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.Notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1359,6 +1413,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1387,6 +1445,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1415,6 +1477,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1442,6 +1508,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1470,6 +1540,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1497,6 +1571,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1532,6 +1610,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1566,6 +1648,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1578,6 +1664,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HeroesWatch Watch App/HeroesWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HeroesWatch Watch App/Preview Content\"";
@@ -1587,6 +1674,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Swift Heroes";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.swiftheroes.Demo;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1608,6 +1696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HeroesWatch Watch App/HeroesWatch Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HeroesWatch Watch App/Preview Content\"";
@@ -1617,6 +1706,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Swift Heroes";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.swiftheroes.Demo;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

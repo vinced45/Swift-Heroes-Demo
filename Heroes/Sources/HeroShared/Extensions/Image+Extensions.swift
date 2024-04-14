@@ -22,3 +22,35 @@ public extension Image {
             .foregroundStyle(Color.heroOrange, Color.heroBlue)
     }
 }
+
+public extension List {
+    func customListStyle() -> some View {
+        self
+        #if os(iOS)
+            .listStyle(.grouped)
+        #endif
+    }
+}
+
+public extension View {
+    @ViewBuilder
+    func ifOS<Content: View>(_ operatingSystems: OperatingSystem...,modifier: (Self) -> Content) -> some View {
+        if operatingSystems.contains(OperatingSystem.current) {
+            modifier(self)
+        } else {
+            self
+        }
+    }
+
+    func modify<T: View>(@ViewBuilder modifier: (Self) -> T) -> T {
+        modifier(self)
+    }
+    
+    func customToolBarStyle() -> some View {
+        self
+        #if os(iOS)
+            .toolbarBackground(Color.heroOrange.gradient, for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
+        #endif
+    }
+}

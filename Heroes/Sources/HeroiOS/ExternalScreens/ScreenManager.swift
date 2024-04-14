@@ -15,7 +15,7 @@ public class ScreenManager {
     public init() {}
     
     public var showScreen = false
-    public var speaker: Speaker = Speaker(id: "1", name: "Alex", image: .alex)
+    public var speaker: Speaker = .alex
     
     public func changeSpeaker() {
         if let newSpeaker = Speaker.all.randomElement() {
