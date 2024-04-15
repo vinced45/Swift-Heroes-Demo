@@ -19,18 +19,28 @@ struct DemoApp: App {
     #endif
     @Environment(\.scenePhase) var scenePhase
     
+    @State var inBackground: Bool = false
+    
     var body: some Scene {
         WindowGroup {
             if #available(iOS 17.0, *) {
-                MainView()
+                if inBackground {
+                    BackgroundView()
+                } else {
+                    MainView()
+                }
             } else if #available(macOS 14.0, *) {
                 Text("heelo")
             } else if #available(tvOS 17.0, *) {
-                Text("heelo")
+                if inBackground {
+                    BackgroundView()
+                } else {
+                    MainView()
+                }
             } else if #available(watchOS 10.0, *) {
                 Text("heelo")
             } else if #available(visionOS 1.0, *){
-                Text("")
+                MainView()
             } else {
                 MainView()
             }
@@ -38,15 +48,16 @@ struct DemoApp: App {
         .onChange(of: scenePhase) { _, newPhase in
             switch newPhase {
             case .background:
+                inBackground = true
                 if #available(iOS 17.0, *) {
                     QuickActionsManager.shared.addQuickActions()
                 }
             case .inactive:
-                break
+                inBackground = true
             case .active:
-                break
+                inBackground = false
             @unknown default:
-                break
+                inBackground = false
             }
         }
     }

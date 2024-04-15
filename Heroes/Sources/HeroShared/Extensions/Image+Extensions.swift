@@ -12,6 +12,9 @@ public extension Image {
     static let alberto = Image("alberto", bundle: .module)
     static let alex = Image("alex", bundle: .module)
     static let andrea = Image("andrea", bundle: .module)
+    
+    static let logo = Image("logo", bundle: .module)
+    static let wordLogo = Image("wordLogo", bundle: .module)
 }
 
 public extension Image {
@@ -20,37 +23,5 @@ public extension Image {
             .font(.title2)
             .symbolRenderingMode(.palette)
             .foregroundStyle(Color.heroOrange, Color.heroBlue)
-    }
-}
-
-public extension List {
-    func customListStyle() -> some View {
-        self
-        #if os(iOS)
-            .listStyle(.grouped)
-        #endif
-    }
-}
-
-public extension View {
-    @ViewBuilder
-    func ifOS<Content: View>(_ operatingSystems: OperatingSystem...,modifier: (Self) -> Content) -> some View {
-        if operatingSystems.contains(OperatingSystem.current) {
-            modifier(self)
-        } else {
-            self
-        }
-    }
-
-    func modify<T: View>(@ViewBuilder modifier: (Self) -> T) -> T {
-        modifier(self)
-    }
-    
-    func customToolBarStyle() -> some View {
-        self
-        #if os(iOS)
-            .toolbarBackground(Color.heroOrange.gradient, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
-        #endif
     }
 }
