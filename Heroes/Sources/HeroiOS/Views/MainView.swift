@@ -14,6 +14,7 @@ public struct MainView: View {
     @State var screenManager = ScreenManager()
     @State var quickActionsManager = QuickActionsManager.shared
     @State private var isSheetPresented = false
+    @State private var showFaq = false
     @State var selectedItem: ListItem? = nil
     
     @State var items: [ListItem] = [.speakers, .extensions]
@@ -118,28 +119,31 @@ public struct MainView: View {
                         Text(item.subtitle)
                         badge(for: item.badges)
                     }
+                    .userActivity(activityType, element: item, { element, activity in
+                        let bundleid = Bundle.main.bundleIdentifier ?? ""
+                        activity.addUserInfoEntries(from: ["id": item.id,
+                                                           "name": item.title,
+                                                           "setby": bundleid])
+                        //activity.el
+                        logUserActivity(activity, label: "Item")
+                    })
                 } else {
                     ContentUnavailableView("Nothing selected", image: "")
                 }
             }
         })
         .sheet(isPresented: $isSheetPresented) {
-            Text("Half screen content here")
-               .presentationDetents([.fraction(0.33), .medium])
+//            Text("Half screen content here")
+//               .presentationDetents([.fraction(0.33), .medium])
+            FAQView()
          }
-        .userActivity(activityType, element: "1", { element, activity in
-            let bundleid = Bundle.main.bundleIdentifier ?? ""
-                        
-            activity.addUserInfoEntries(from: ["id": "1",
-                                               "name": "Alex",
-                                               "setby": bundleid])
-            //activity.el
-            logUserActivity(activity, label: "Activity")
-        })
+        .sheet(isPresented: $showFaq) {
+            FAQView()
+         }
         .onContinueUserActivity(activityType, perform: { userActivity in
-            if let _ = userActivity.userInfo?["id"] as? String {
-                // Load handoff page
-
+            if let id = userActivity.userInfo?["id"] as? String,
+               let foundItem = findItem(for: id) {
+                selectedItem = foundItem
             }
             logUserActivity(userActivity, label: "on activity")
         })
@@ -188,6 +192,18 @@ public struct MainView: View {
     func logUserActivity(_ activity: NSUserActivity, label: String = "") {
         print("\(label) TYPE = \(activity.activityType)")
         print("\(label) INFO = \(activity.userInfo ?? [:])")
+    }
+    
+    func findItem(for id: String) -> ListItem? {
+        if let item = items.first?.items?.filter( { $0.id == id }).first {
+            return item
+        }
+        
+        if let item = items.last?.items?.filter( { $0.id == id }).first {
+            return item
+        }
+        
+        return nil
     }
 }
 

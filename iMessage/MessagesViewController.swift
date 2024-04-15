@@ -76,7 +76,17 @@ class MessagesViewController: MSMessagesAppViewController {
     // Remove any child view controllers that have been presented.
         removeAllChildViewControllers()
      
-        self.add(swiftUIView: AnyView(SwiftUIView(action: {})))
+        self.add(swiftUIView: AnyView(MessageView(action: { image in
+            let layout = MSMessageTemplateLayout()
+            layout.image = image.getUIImage(newSize: .init(width: 100, height: 100))
+            layout.caption = "My cool logo"
+            
+            let message = MSMessage(session: conversation.selectedMessage?.session ?? MSSession())
+            message.layout = layout
+            
+            conversation.insert(message)
+        })))
+        
     }
    
     // MARK: Convenience

@@ -7,23 +7,48 @@
 
 import SwiftUI
 import UserNotifications
+import HeroShared
+
+let activityType = "com.swiftheroes.speakers"
 
 struct ContentView: View {
+    @State var selectedItem: ListItem? = nil
+    
+    @State var items: [ListItem] = Speaker.all.map({ ListItem(id: $0.id, title: $0.title, subtitle: $0.subtitle, image: $0.image, badges: [], type: .speaker, items: nil)})
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Button("Tap Me", action: auth)
-        }
-        .padding()
+        NavigationSplitView(sidebar: {
+            List(items, selection: $selectedItem) { item in
+                NavigationLink(value: item, label: {
+                    HStack {
+                        item.image.resizable().frame(width: 20, height: 20)
+                        Text(item.title)
+                    }
+                })
+            }
+        }, detail: {
+            if let item = selectedItem {
+                VStack {
+                    item.image.resizable()
+                    
+                    Text(item.title)
+                }
+                .userActivity(activityType, element: item, { element, activity in
+                    let bundleid = Bundle.main.bundleIdentifier ?? ""
+                    activity.addUserInfoEntries(from: ["id": item.id,
+                                                       "name": item.title,
+                                                       "setby": bundleid])
+                    //activity.el
+                    logUserActivity(activity, label: "Item")
+                })
+            }
+        })
         .task {
             let center = UNUserNotificationCenter.current()
             _ = try? await center.requestAuthorization(
                 options: [.alert, .sound, .badge]
             )
         }
+        
     }
     
     func auth() {
@@ -33,6 +58,11 @@ struct ContentView: View {
                 options: [.alert, .sound, .badge]
             )
         }
+    }
+    
+    func logUserActivity(_ activity: NSUserActivity, label: String = "") {
+        print("\(label) TYPE = \(activity.activityType)")
+        print("\(label) INFO = \(activity.userInfo ?? [:])")
     }
 }
 

@@ -16,8 +16,11 @@ class FAQService {
     var faqs: [FAQ] = []
     var loading = false
     let jsonURLString: String
-    init(_ jsonURLString: String) {
-        self.jsonURLString = jsonURLString
+    init(base: String, appName: String) {
+        let supportedLanguages: [String] = ["en", "it"]
+        let locale = supportedLanguages.contains(where: NSLocale.current.identifier.contains) ? NSLocale.current.identifier : "en"
+        
+        self.jsonURLString = "\(base)\(locale)/\(appName).json"
     }
     var jsonURL: URL {
         URL(string: jsonURLString)!
@@ -45,4 +48,3 @@ class FAQService {
         }
     }
 }
-

@@ -10,11 +10,10 @@
 			<dict>
 				<key>NSExtensionActivationDictionaryVersion</key>
 				<integer>2</integer>
-				<key>NSExtensionActivationSupportsText</key>
-				<true/>
-				<key>NSExtensionActivationSupportsWebPageWithMaxCount</key>
+				<key>NSExtensionActivationSupportsAttachmentsWithMaxCount</key>
 				<integer>1</integer>
-				<key>NSExtensionActivationSupportsWebURLWithMaxCount</key>
+				<key>NSExtensionActivationSupportsImageWithMaxCount
+</key>
 				<integer>1</integer>
 			</dict>
 			<key>NSExtensionServiceAllowsFinderPreviewItem</key>

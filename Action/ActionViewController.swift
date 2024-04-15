@@ -21,20 +21,22 @@ class ActionViewController: UIViewController {
         
         // For example, look for an image and place it into an image view.
         // Replace this with something appropriate for the type[s] your extension supports.
-        self.add(swiftUIView: AnyView(SwiftUIView(action: done)))
-        /*
+//        let shareView = ShareView(action: { image in
+//            self.done()
+//        })
+//        self.add(swiftUIView: AnyView(shareView))
+        
         var imageFound = false
         for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
             for provider in item.attachments! {
                 if provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) {
                     // This is an image. We'll load it, then place it in our image view.
-                    weak var weakImageView = self.imageView
                     provider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil, completionHandler: { (imageURL, error) in
                         OperationQueue.main.addOperation {
-                            if let strongImageView = weakImageView {
-                                if let imageURL = imageURL as? URL {
-                                    strongImageView.image = UIImage(data: try! Data(contentsOf: imageURL))
-                                }
+                            if let imageURL = imageURL as? URL {
+                                let image = UIImage(data: try! Data(contentsOf: imageURL))
+                                let shareView = ShareView(image: image)
+                                self.add(swiftUIView: AnyView(shareView))
                             }
                         }
                     })
@@ -49,7 +51,6 @@ class ActionViewController: UIViewController {
                 break
             }
         }
-        */
     }
 
     func done() {

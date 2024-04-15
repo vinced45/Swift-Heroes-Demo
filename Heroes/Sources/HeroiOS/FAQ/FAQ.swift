@@ -75,5 +75,3 @@ struct FAQ: Codable, Identifiable, Hashable {
         case sortOrder, level, question, answer, linkType, link
     }
 }
-
-

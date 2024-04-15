@@ -1206,7 +1206,7 @@
 				DEVELOPMENT_TEAM = SP7UUHBXPL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Action/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Add Heroes";
+				INFOPLIST_KEY_CFBundleDisplayName = "Add Image to Heroes Demo";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1237,7 +1237,7 @@
 				DEVELOPMENT_TEAM = SP7UUHBXPL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Action/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Add Heroes";
+				INFOPLIST_KEY_CFBundleDisplayName = "Add Image to Heroes Demo";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (

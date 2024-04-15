@@ -10,8 +10,10 @@
 
 
 import SwiftUI
+#if !os(watchOS) && !os(tvOS)
 import WebKit
- 
+#endif
+
 #if os(iOS) || os(visionOS)
 struct FAQWebView: UIViewRepresentable {
     var url: URL
@@ -28,7 +30,7 @@ struct FAQWebView: UIViewRepresentable {
         webView.load(request)
     }
 }
-#else
+#elseif os(macOS)
 struct FAQWebView: NSViewRepresentable {
     func updateNSView(_ nsView: WKWebView, context: Context) {
         let request = URLRequest(url: url)

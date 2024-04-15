@@ -11,10 +11,14 @@
 
 import SwiftUI
 
-struct FAQView: View {
-    @State private var faqService = FAQService("https://vinced45.github.io/Swift-Heroes-Demo/")
+public struct FAQView: View {
+    public init() {}
+    
+    @State private var faqService = FAQService(base: "https://vinced45.github.io/Swift-Heroes-Demo/SwiftHeroesFaq/", 
+                                               appName: "SwiftHeroesFaq")
     @State private var groupedByLevel =  [Int: [FAQ]]()
     @Environment(\.dismiss) private var dismiss
+    
     func levelString(_ level: Int) -> String {
         switch level {
         case 1:
@@ -29,7 +33,8 @@ struct FAQView: View {
             "Level 5 Title"
         }
     }
-    var body: some View {
+    
+    public var body: some View {
         NavigationStack {
             Group {
                 if faqService.loading {
@@ -39,7 +44,9 @@ struct FAQView: View {
                         ForEach(groupedByLevel.keys.sorted(), id: \.self) { key in
                             Section(header: Text(levelString(key))) {
                                 ForEach(groupedByLevel[key]!) { faq in
+                                    #if !os(tvOS)
                                     QuestionView(faq: faq, baseURL: faqService.baseURL)
+                                    #endif
                                 }
                             }
                         }
@@ -65,7 +72,7 @@ struct FAQView: View {
         }
     }
 }
-
+#if !os(tvOS)
 struct QuestionView: View {
     @State private var showAnswer = false
     @State private var showWebView = false
@@ -98,7 +105,7 @@ struct QuestionView: View {
                                     .padding()
                                     .frame(maxWidth: .infinity, alignment: .trailing)
                                 }
-#else
+#elseif os(macOS)
                                 VStack {
                                     FAQWebView(url: faq.linkURL(baseURL: baseURL)!)
                                         .frame(maxWidth: .infinity, alignment: .trailing)
@@ -136,7 +143,7 @@ struct QuestionView: View {
         )
     }
 }
-
+#endif
 
 #Preview {
     NavigationStack {
