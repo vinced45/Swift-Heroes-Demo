@@ -28,7 +28,6 @@ struct DemoApp: App {
                     BackgroundView()
                 } else {
                     MainView()
-                        //.onContinueUserActivity(CSSearchableItemActionType, perform: handleSpotlight)
                 }
             } else if #available(macOS 14.0, *) {
                 MainView()
@@ -38,8 +37,6 @@ struct DemoApp: App {
                 } else {
                     MainView()
                 }
-            } else if #available(watchOS 10.0, *) {
-                Text("heelo")
             } else if #available(visionOS 1.0, *){
                 MainView()
             } else {

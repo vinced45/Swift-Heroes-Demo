@@ -31,12 +31,12 @@ public extension Speaker {
     }
     
     static var alex: Speaker = .init(id: "1", 
-                                     name: "Alex",
-                                     desc: "This is Alex",
+                                     name: String(localized: "Alex", table: "Heroes", bundle: .module),
+                                     desc: String(localized: "This is Alex", table: "Heroes", bundle: .module),
                                      image: .alex)
     static var alberto: Speaker = .init(id: "2", 
-                                        name: "Alberto",
-                                        desc: "This is alebeto",
+                                        name: String(localized: "Alberto", table: "HeroShared", bundle: .module),
+                                        desc: String(localized: "This is Alberto", table: "HeroShared", bundle: .module),
                                         image: .alberto)
 }
 

@@ -20,7 +20,7 @@ public struct MainView: View {
     @State private var showFaq = false
     @State var selectedItem: ListItem? = nil
     
-    @State var items: [ListItem] = [.speakers, .extensions]
+    @State var items: [ListItem] = [.speakers, .extensions, .faq]
     
     @Namespace var namespace
     
@@ -109,6 +109,21 @@ public struct MainView: View {
                                     .bold()
                             }
                         })
+                    case .faq:
+                        NavigationLink(value: row.wrappedValue, label: {
+                            row.image.wrappedValue
+                                .font(.title)
+                                .symbolRenderingMode(.palette)
+                                .foregroundStyle(Color.heroOrange, Color.heroBlue)
+                                .padding(.horizontal)
+                            VStack(spacing: 1) {
+                                Text(row.title.wrappedValue)
+                                    .font(.title)
+                                    .bold()
+                                Text(row.subtitle.wrappedValue)
+                                    .font(.caption)
+                            }
+                        })
                     }
                 }
             }
@@ -119,31 +134,14 @@ public struct MainView: View {
         }, detail: {
             VStack {
                 if let item = selectedItem {
-                    VStack {
-                        item.image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 300)
-//                            .matchedGeometryEffect(id: item.id,
-//                                                   in: namespace,
-//                                                   /*properties: .frame,
-//                                                   anchor: .leading,*/
-//                                                   isSource: item.id == selectedItem?.id ?? "")
-                        
-                        Text(item.title)
-                        Text(item.subtitle)
-                        badge(for: item.badges)
+                    switch item.type {
+                    case .speaker, .extensionItem:
+                        speakerView(for: item)
+                    default:
+                        FAQView()
                     }
-                    .userActivity(activityType, element: item, { element, activity in
-                        let bundleid = Bundle.main.bundleIdentifier ?? ""
-                        activity.addUserInfoEntries(from: ["id": item.id,
-                                                           "name": item.title,
-                                                           "setby": bundleid])
-                        //activity.el
-                        logUserActivity(activity, label: "Item")
-                    })
                 } else {
-                    ContentUnavailableView("Nothing selected", image: "")
+                    ContentUnavailableView("Nothing selected", systemImage: "cloud.fill")
                 }
             }
         })
@@ -253,6 +251,33 @@ public struct MainView: View {
         }
         
         return nil
+    }
+    
+    @ViewBuilder
+    func speakerView(for item: ListItem) -> some View {
+        VStack {
+            item.image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300)
+//                            .matchedGeometryEffect(id: item.id,
+//                                                   in: namespace,
+//                                                   /*properties: .frame,
+//                                                   anchor: .leading,*/
+//                                                   isSource: item.id == selectedItem?.id ?? "")
+            
+            Text(item.title)
+            Text(item.subtitle)
+            badge(for: item.badges)
+        }
+        .userActivity(activityType, element: item, { element, activity in
+            let bundleid = Bundle.main.bundleIdentifier ?? ""
+            activity.addUserInfoEntries(from: ["id": item.id,
+                                               "name": item.title,
+                                               "setby": bundleid])
+            //activity.el
+            logUserActivity(activity, label: "Item")
+        })
     }
     
     #if os(iOS)

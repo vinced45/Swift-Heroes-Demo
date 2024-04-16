@@ -18,9 +18,11 @@ class FAQService {
     let jsonURLString: String
     init(base: String, appName: String) {
         let supportedLanguages: [String] = ["en", "it"]
-        let locale = supportedLanguages.contains(where: NSLocale.current.identifier.contains) ? NSLocale.current.identifier : "en"
+        let preferredLocale = Locale.preferredLanguages.first ?? ""
+        let locale = supportedLanguages.contains(preferredLocale) ? preferredLocale : "en"
         
         self.jsonURLString = "\(base)\(locale)/\(appName).json"
+        print("url \(self.jsonURLString)")
     }
     var jsonURL: URL {
         URL(string: jsonURLString)!
@@ -43,7 +45,7 @@ class FAQService {
             )
             loading = false
         } catch {
-            print("Could not decode")
+            print("Could not decode: \(error.localizedDescription)")
             loading = false
         }
     }

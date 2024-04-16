@@ -1,0 +1,64 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "👓" : {
+
+    },
+    "Bad Image" : {
+
+    },
+    "Close" : {
+
+    },
+    "Dismiss" : {
+
+    },
+    "Extensions" : {
+
+    },
+    "FAQ" : {
+
+    },
+    "Found Image" : {
+
+    },
+    "Half screen content here" : {
+
+    },
+    "Hello, World!" : {
+
+    },
+    "Nothing selected" : {
+
+    },
+    "Post as Image" : {
+
+    },
+    "Press escape to exit view" : {
+
+    },
+    "Speakers" : {
+
+    },
+    "Swift Heroes" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swift Heroes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eroi rapidi"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

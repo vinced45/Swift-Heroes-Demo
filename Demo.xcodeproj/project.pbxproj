@@ -72,6 +72,7 @@
 		4EA0179A2BCE149700A84B72 /* heroes-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA017972BCE149700A84B72 /* heroes-2.jpg */; };
 		4EA0179C2BCE158300A84B72 /* highlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179B2BCE158300A84B72 /* highlights.mp4 */; };
 		4EA0179E2BCE32A200A84B72 /* highlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179D2BCE32A200A84B72 /* highlights.mp4 */; };
+		4EA017A02BCE486700A84B72 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179F2BCE486700A84B72 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 		4EA017972BCE149700A84B72 /* heroes-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heroes-2.jpg"; sourceTree = "<group>"; };
 		4EA0179B2BCE158300A84B72 /* highlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = highlights.mp4; sourceTree = "<group>"; };
 		4EA0179D2BCE32A200A84B72 /* highlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = highlights.mp4; sourceTree = "<group>"; };
+		4EA0179F2BCE486700A84B72 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +395,7 @@
 				4E5F30692BC35E9200356231 /* Assets.xcassets */,
 				4E5F306B2BC35E9200356231 /* Demo.entitlements */,
 				4E5F306C2BC35E9200356231 /* Preview Content */,
+				4EA0179F2BCE486700A84B72 /* Localizable.xcstrings */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -808,6 +811,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = 4E5F30592BC35E9000356231;
 			productRefGroup = 4E5F30632BC35E9000356231 /* Products */;
@@ -835,6 +839,7 @@
 			files = (
 				4E5F306E2BC35E9200356231 /* Preview Assets.xcassets in Resources */,
 				4EA017782BCDB64F00A84B72 /* vince.jpg in Resources */,
+				4EA017A02BCE486700A84B72 /* Localizable.xcstrings in Resources */,
 				4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

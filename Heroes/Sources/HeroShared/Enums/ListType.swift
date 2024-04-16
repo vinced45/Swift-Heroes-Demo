@@ -11,4 +11,5 @@ public enum ListType: String {
     case sectionHeader
     case speaker
     case extensionItem
+    case faq
 }
