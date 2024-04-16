@@ -28,9 +28,10 @@ struct DemoApp: App {
                     BackgroundView()
                 } else {
                     MainView()
+                        //.onContinueUserActivity(CSSearchableItemActionType, perform: handleSpotlight)
                 }
             } else if #available(macOS 14.0, *) {
-                Text("heelo")
+                MainView()
             } else if #available(tvOS 17.0, *) {
                 if inBackground {
                     BackgroundView()
@@ -61,4 +62,12 @@ struct DemoApp: App {
             }
         }
     }
+#if os(iOS)
+    func handleSpotlight(userActivity: NSUserActivity) {
+        print("Handling Spotlight item main")
+        //if let id = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
+        
+    }
+#endif
+    
 }

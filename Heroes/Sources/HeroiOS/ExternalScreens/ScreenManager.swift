@@ -16,10 +16,16 @@ public class ScreenManager {
     
     public var showScreen = false
     public var speaker: Speaker = .alex
+    public var selection: Int = 0
+    public var speakers: [Speaker] = Speaker.all
     
-    public func changeSpeaker() {
-        if let newSpeaker = Speaker.all.randomElement() {
-            speaker = newSpeaker
-        }
+    public func add() {
+        selection += 1
+        speaker = speakers[selection]
+    }
+    
+    public func minus() {
+        selection -= 1
+        speaker = speakers[selection]
     }
 }

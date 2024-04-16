@@ -37,7 +37,7 @@ public struct ListItem: Identifiable, Hashable, Listable {
 }
 
 public extension ListItem {
-    static let speakers = ListItem(id: "100",
+    static let speakers = ListItem(id: "1000",
                                    title: "Speakers",
                                    subtitle: "Swift Hero Speakers",
                                    image: Image(systemName: "person.3.fill"),
@@ -45,7 +45,7 @@ public extension ListItem {
                                    type: .sectionHeader,
                                    items: Speaker.all.map({ ListItem(id : $0.id, title: $0.title, subtitle: $0.subtitle, image: $0.image, badges: [], type: .speaker) }))
     
-    static let extensions = ListItem(id: "200",
+    static let extensions = ListItem(id: "2000",
                                      title: "Extensions",
                                      subtitle: "Extensions covered in Talk",
                                      image: Image(systemName: "puzzlepiece.extension.fill"),

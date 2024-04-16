@@ -22,6 +22,7 @@ extension AppDelegate {
             
         }
         
+        
         let sceneConfiguration = UISceneConfiguration(name: "Custom Configuration", sessionRole: connectingSceneSession.role)
         sceneConfiguration.delegateClass = SceneDelegate.self
 

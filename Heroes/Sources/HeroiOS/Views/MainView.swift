@@ -7,6 +7,9 @@
 
 import SwiftUI
 import HeroShared
+#if os(iOS)
+import CoreSpotlight
+#endif
 
 public struct MainView: View {
     public init() {}
@@ -18,6 +21,8 @@ public struct MainView: View {
     @State var selectedItem: ListItem? = nil
     
     @State var items: [ListItem] = [.speakers, .extensions]
+    
+    @Namespace var namespace
     
     public var body: some View {
         #if os(tvOS)
@@ -89,6 +94,11 @@ public struct MainView: View {
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .cornerRadius(10.0)
+//                                .matchedGeometryEffect(id: row.id,
+//                                                       in: namespace,
+//                                                       /*properties: .frame,
+//                                                       anchor: .leading,*/
+//                                                       isSource: row.id != selectedItem?.id ?? "")
                             VStack {
                                 Text(row.title.wrappedValue)
                                     .font(.title3)
@@ -114,6 +124,11 @@ public struct MainView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 300)
+//                            .matchedGeometryEffect(id: item.id,
+//                                                   in: namespace,
+//                                                   /*properties: .frame,
+//                                                   anchor: .leading,*/
+//                                                   isSource: item.id == selectedItem?.id ?? "")
                         
                         Text(item.title)
                         Text(item.subtitle)
@@ -133,13 +148,25 @@ public struct MainView: View {
             }
         })
         .sheet(isPresented: $isSheetPresented) {
-//            Text("Half screen content here")
-//               .presentationDetents([.fraction(0.33), .medium])
-            FAQView()
+            ExternalScreenControlView(viewModel: screenManager)
+               .presentationDetents([.fraction(0.33), .medium])
          }
         .sheet(isPresented: $showFaq) {
             FAQView()
          }
+        .onOpenURL { url in
+            print("Received URL: \(url)")
+        }
+        #if os(iOS)
+        .onContinueUserActivity(CSSearchableItemActionType, perform: { userActivity in
+            print("Handling Spotlight item inside")
+            if let id = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
+            let item = findItem(for: id) {
+                print("Found Spotlight item")
+                selectedItem = item
+            }
+        })
+        #endif
         .onContinueUserActivity(activityType, perform: { userActivity in
             if let id = userActivity.userInfo?["id"] as? String,
                let foundItem = findItem(for: id) {
@@ -148,13 +175,35 @@ public struct MainView: View {
             logUserActivity(userActivity, label: "on activity")
         })
         .onChange(of: quickActionsManager.quickAction) { _, _ in
-            print("Change current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
+            let action = quickActionsManager.quickAction?.rawValue ?? ""
+            print("Change current action is \(action)")
+            if  action == "faq" {
+                isSheetPresented = true
+                print("faq")
+            }
+            if action == "vince", let item = findItem(for: "2") {
+                selectedItem = item
+                print("vincy")
+            }
         }
         .onChange(of: screenManager.showScreen) { _, newValue in
             isSheetPresented = newValue
         }
         .onAppear {
-            print("current action is \(String(describing: quickActionsManager.quickAction?.rawValue))")
+            let action = quickActionsManager.quickAction?.rawValue ?? ""
+            print("Current action is \(action)")
+            if  action == "faq" {
+                isSheetPresented = true
+                print("faq")
+            }
+            if action == "vince", let item = findItem(for: "2") {
+                selectedItem = item
+                print("vincy")
+            }
+        }
+        .task {
+            let _ = await Spotlight.deIndexSpeakers()
+            let _ = await Spotlight.indexSpeakers()
         }
     }
     #endif
@@ -205,6 +254,17 @@ public struct MainView: View {
         
         return nil
     }
+    
+    #if os(iOS)
+    func handleSpotlight(userActivity: NSUserActivity) {
+        print("Handling Spotlight item")
+        if let id = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
+        let item = findItem(for: id) {
+            print("Found Spotlight item")
+            selectedItem = item
+        }
+    }
+    #endif
 }
 
 #Preview {

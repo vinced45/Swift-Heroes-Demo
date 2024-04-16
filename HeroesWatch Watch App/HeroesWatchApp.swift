@@ -19,12 +19,9 @@ struct HeroesWatch_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                
         }
         
-       //#if os(watchOS)
        WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
-       //#endif
     }
 }
 
@@ -32,7 +29,7 @@ import AVFoundation
 struct NotificationView: View {
     var speaker: Speaker = .alex
     @State var isSwitched: Bool = false
-    public var player: AVPlayer = AVPlayer(url: Bundle.main.url(forResource: "video", withExtension: "mp4")!)
+    public var player: AVPlayer = AVPlayer(url: Bundle.main.url(forResource: "highlights", withExtension: "mp4")!)
     
     var body: some View {
         VStack {

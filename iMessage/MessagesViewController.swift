@@ -77,16 +77,35 @@ class MessagesViewController: MSMessagesAppViewController {
         removeAllChildViewControllers()
      
         self.add(swiftUIView: AnyView(MessageView(action: { image in
-            let layout = MSMessageTemplateLayout()
-            layout.image = image.getUIImage(newSize: .init(width: 100, height: 100))
-            layout.caption = "My cool logo"
-            
-            let message = MSMessage(session: conversation.selectedMessage?.session ?? MSSession())
-            message.layout = layout
-            
-            conversation.insert(message)
+//            let layout = MSMessageTemplateLayout()
+//            layout.image = image.getUIImage(newSize: .init(width: 100, height: 100))
+//            layout.caption = "My cool logo"
+//            
+//            let message = MSMessage(session: conversation.selectedMessage?.session ?? MSSession())
+//            message.layout = layout
+//            conversation.sendAttachment(<#T##URL: URL##URL#>, withAlternateFilename: <#T##String?#>)
+//            
+//            conversation.insert(message)
+            self.getImage()
         })))
         
+    }
+    
+    func getImage() {
+        let fileManager = FileManager.default
+        let paths = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent("Image.png")
+        let image = UIImage(named: "vince")
+        print(paths)
+        let imageData = image!.jpegData(compressionQuality: 0.5)
+        fileManager.createFile(atPath: paths as String, contents: imageData, attributes: nil)
+        if let conversation = activeConversation {
+            conversation.insertAttachment(URL(fileURLWithPath: paths), withAlternateFilename: "Image", completionHandler:{ (error) in
+                if let error = error {
+                    print(error)
+                    
+                }
+            })
+        }
     }
    
     // MARK: Convenience

@@ -12,6 +12,8 @@ public extension List {
         self
         #if os(iOS)
             .listStyle(.grouped)
+        #elseif os(macOS)
+            .listStyle(.sidebar)
         #endif
     }
 }

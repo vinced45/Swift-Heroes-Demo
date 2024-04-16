@@ -19,12 +19,25 @@ public struct ExternalScreenView: View {
     
     public var body: some View {
         ZStack {
-            Color.heroOrange
+            LinearGradient(gradient: Gradient(colors: [.heroOrange, .heroBlue]), startPoint: .top, endPoint: .bottom)
             
             VStack {
+                HStack {
+                    Image.logo
+                        .resizable()
+                        .frame(width: 75, height: 75)
+                        .cornerRadius(10.0)
+                    
+                    Image.wordLogo
+                        .resizable()
+                        .frame(width: 300, height: 100)
+                }
+                .padding()
+                
                 speaker.image
                     .resizable()
-                    .frame(width: 300, height: 300)
+                    .frame(width: 250, height: 250)
+                    .cornerRadius(15.0)
                 
                 Text(speaker.name)
                     .font(.largeTitle)

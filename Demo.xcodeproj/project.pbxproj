@@ -61,14 +61,17 @@
 		4E5F31802BC8BA7C00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317F2BC8BA7C00356231 /* HeroShared */; };
 		4E5F31822BC8BA8400356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31812BC8BA8400356231 /* HeroShared */; };
 		4E8F644B2BCA3204005F55C7 /* test.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F644A2BCA3204005F55C7 /* test.apns */; };
-		4E8F644D2BCA346A005F55C7 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F644C2BCA346A005F55C7 /* PushNotificationPayload.apns */; };
-		4ED7315A2BCB95FF00CE014F /* pretravel-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731522BCB95FF00CE014F /* pretravel-1.png */; };
-		4ED7315B2BCB95FF00CE014F /* pretravel-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731532BCB95FF00CE014F /* pretravel-2.png */; };
-		4ED7315C2BCB95FF00CE014F /* pretravel-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731542BCB95FF00CE014F /* pretravel-3.png */; };
-		4ED7315D2BCB95FF00CE014F /* pretravel-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731552BCB95FF00CE014F /* pretravel-4.png */; };
-		4ED7315E2BCB95FF00CE014F /* pretravel-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731562BCB95FF00CE014F /* pretravel-5.png */; };
-		4ED7315F2BCB95FF00CE014F /* smallvid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731572BCB95FF00CE014F /* smallvid.mp4 */; };
-		4ED731602BCB95FF00CE014F /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4ED731582BCB95FF00CE014F /* video.mp4 */; };
+		4EA017782BCDB64F00A84B72 /* vince.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA017772BCDB64F00A84B72 /* vince.jpg */; };
+		4EA017812BCDDA1700A84B72 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA017802BCDDA1700A84B72 /* QuickLook.framework */; };
+		4EA017842BCDDA1700A84B72 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA017832BCDDA1700A84B72 /* PreviewViewController.swift */; };
+		4EA0178D2BCDDA1700A84B72 /* Preview.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4EA0177F2BCDDA1600A84B72 /* Preview.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4EA017922BCDDB3F00A84B72 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA017912BCDDB3F00A84B72 /* HeroiOS */; };
+		4EA017942BCDDB4400A84B72 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4EA017932BCDDB4400A84B72 /* HeroShared */; };
+		4EA017982BCE149700A84B72 /* heroes-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA017952BCE149700A84B72 /* heroes-3.jpg */; };
+		4EA017992BCE149700A84B72 /* heroes-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA017962BCE149700A84B72 /* heroes-1.jpg */; };
+		4EA0179A2BCE149700A84B72 /* heroes-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA017972BCE149700A84B72 /* heroes-2.jpg */; };
+		4EA0179C2BCE158300A84B72 /* highlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179B2BCE158300A84B72 /* highlights.mp4 */; };
+		4EA0179E2BCE32A200A84B72 /* highlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179D2BCE32A200A84B72 /* highlights.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +131,13 @@
 			remoteGlobalIDString = 4E5F31502BC83D0A00356231;
 			remoteInfo = "HeroesWatch Watch App";
 		};
+		4EA0178B2BCDDA1700A84B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E5F305A2BC35E9000356231 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EA0177E2BCDDA1600A84B72;
+			remoteInfo = Preview;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -142,6 +152,7 @@
 				4E5F30D52BC3606300356231 /* Spotlight.appex in Embed Foundation Extensions */,
 				4E5F309A2BC35FAD00356231 /* Share.appex in Embed Foundation Extensions */,
 				4E5F30B02BC35FFF00356231 /* Notification.appex in Embed Foundation Extensions */,
+				4EA0178D2BCDDA1700A84B72 /* Preview.appex in Embed Foundation Extensions */,
 				4E5F30872BC35F3000356231 /* Action.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -223,15 +234,17 @@
 		4E5F31572BC83D0C00356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E8F644A2BCA3204005F55C7 /* test.apns */ = {isa = PBXFileReference; lastKnownFileType = text; name = test.apns; path = Heroes/test.apns; sourceTree = SOURCE_ROOT; };
-		4E8F644C2BCA346A005F55C7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		4E8F644E2BCA3654005F55C7 /* HeroesWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeroesWatch Watch App.entitlements"; sourceTree = "<group>"; };
-		4ED731522BCB95FF00CE014F /* pretravel-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-1.png"; sourceTree = "<group>"; };
-		4ED731532BCB95FF00CE014F /* pretravel-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-2.png"; sourceTree = "<group>"; };
-		4ED731542BCB95FF00CE014F /* pretravel-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-3.png"; sourceTree = "<group>"; };
-		4ED731552BCB95FF00CE014F /* pretravel-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-4.png"; sourceTree = "<group>"; };
-		4ED731562BCB95FF00CE014F /* pretravel-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pretravel-5.png"; sourceTree = "<group>"; };
-		4ED731572BCB95FF00CE014F /* smallvid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = smallvid.mp4; sourceTree = "<group>"; };
-		4ED731582BCB95FF00CE014F /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		4EA017772BCDB64F00A84B72 /* vince.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vince.jpg; sourceTree = "<group>"; };
+		4EA0177F2BCDDA1600A84B72 /* Preview.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Preview.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EA017802BCDDA1700A84B72 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		4EA017832BCDDA1700A84B72 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		4EA0178A2BCDDA1700A84B72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA017952BCE149700A84B72 /* heroes-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heroes-3.jpg"; sourceTree = "<group>"; };
+		4EA017962BCE149700A84B72 /* heroes-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heroes-1.jpg"; sourceTree = "<group>"; };
+		4EA017972BCE149700A84B72 /* heroes-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heroes-2.jpg"; sourceTree = "<group>"; };
+		4EA0179B2BCE158300A84B72 /* highlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = highlights.mp4; sourceTree = "<group>"; };
+		4EA0179D2BCE32A200A84B72 /* highlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = highlights.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +330,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EA0177C2BCDDA1600A84B72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA017922BCDDB3F00A84B72 /* HeroiOS in Frameworks */,
+				4EA017942BCDDB4400A84B72 /* HeroShared in Frameworks */,
+				4EA017812BCDDA1700A84B72 /* QuickLook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -333,6 +356,7 @@
 				4E5F30CF2BC3606300356231 /* Spotlight */,
 				4E5F31122BC4256500356231 /* AppClips */,
 				4E5F31522BC83D0A00356231 /* HeroesWatch Watch App */,
+				4EA017822BCDDA1700A84B72 /* Preview */,
 				4E5F30792BC35F3000356231 /* Frameworks */,
 				4E5F30632BC35E9000356231 /* Products */,
 			);
@@ -350,6 +374,7 @@
 				4E5F30E52BC3659600356231 /* NotificationService.appex */,
 				4E5F31112BC4256500356231 /* AppClips.app */,
 				4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */,
+				4EA0177F2BCDDA1600A84B72 /* Preview.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,6 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				4E5F312C2BC61D8F00356231 /* Info.plist */,
+				4EA017772BCDB64F00A84B72 /* vince.jpg */,
 				4E5F30652BC35E9000356231 /* DemoApp.swift */,
 				4E5F30F62BC380BF00356231 /* AppDelegate.swift */,
 				4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */,
@@ -386,6 +412,7 @@
 				4E5F30A32BC35FFF00356231 /* UserNotifications.framework */,
 				4E5F30A52BC35FFF00356231 /* UserNotificationsUI.framework */,
 				4E5F30B92BC3602400356231 /* Messages.framework */,
+				4EA017802BCDDA1700A84B72 /* QuickLook.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -474,12 +501,12 @@
 			isa = PBXGroup;
 			children = (
 				4E8F644E2BCA3654005F55C7 /* HeroesWatch Watch App.entitlements */,
+				4EA0179D2BCE32A200A84B72 /* highlights.mp4 */,
 				4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */,
 				4E5F31552BC83D0A00356231 /* ContentView.swift */,
 				4E5F31572BC83D0C00356231 /* Assets.xcassets */,
 				4E5F31592BC83D0C00356231 /* Preview Content */,
 				4E8F644A2BCA3204005F55C7 /* test.apns */,
-				4E8F644C2BCA346A005F55C7 /* PushNotificationPayload.apns */,
 			);
 			path = "HeroesWatch Watch App";
 			sourceTree = "<group>";
@@ -492,16 +519,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		4EA017822BCDDA1700A84B72 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				4EA017832BCDDA1700A84B72 /* PreviewViewController.swift */,
+				4EA0178A2BCDDA1700A84B72 /* Info.plist */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
 		4ED731592BCB95FF00CE014F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4ED731522BCB95FF00CE014F /* pretravel-1.png */,
-				4ED731532BCB95FF00CE014F /* pretravel-2.png */,
-				4ED731542BCB95FF00CE014F /* pretravel-3.png */,
-				4ED731552BCB95FF00CE014F /* pretravel-4.png */,
-				4ED731562BCB95FF00CE014F /* pretravel-5.png */,
-				4ED731572BCB95FF00CE014F /* smallvid.mp4 */,
-				4ED731582BCB95FF00CE014F /* video.mp4 */,
+				4EA017962BCE149700A84B72 /* heroes-1.jpg */,
+				4EA017972BCE149700A84B72 /* heroes-2.jpg */,
+				4EA017952BCE149700A84B72 /* heroes-3.jpg */,
+				4EA0179B2BCE158300A84B72 /* highlights.mp4 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -531,6 +564,7 @@
 				4E5F30EB2BC3659600356231 /* PBXTargetDependency */,
 				4E5F311F2BC4256700356231 /* PBXTargetDependency */,
 				4E5F315D2BC83D0C00356231 /* PBXTargetDependency */,
+				4EA0178C2BCDDA1700A84B72 /* PBXTargetDependency */,
 			);
 			name = Demo;
 			packageProductDependencies = (
@@ -704,6 +738,27 @@
 			productReference = 4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4EA0177E2BCDDA1600A84B72 /* Preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EA0178E2BCDDA1700A84B72 /* Build configuration list for PBXNativeTarget "Preview" */;
+			buildPhases = (
+				4EA0177B2BCDDA1600A84B72 /* Sources */,
+				4EA0177C2BCDDA1600A84B72 /* Frameworks */,
+				4EA0177D2BCDDA1600A84B72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preview;
+			packageProductDependencies = (
+				4EA017912BCDDB3F00A84B72 /* HeroiOS */,
+				4EA017932BCDDB4400A84B72 /* HeroShared */,
+			);
+			productName = Preview;
+			productReference = 4EA0177F2BCDDA1600A84B72 /* Preview.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -741,6 +796,9 @@
 					4E5F31502BC83D0A00356231 = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					4EA0177E2BCDDA1600A84B72 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 4E5F305D2BC35E9000356231 /* Build configuration list for PBXProject "Demo" */;
@@ -765,6 +823,7 @@
 				4E5F30CD2BC3606300356231 /* Spotlight */,
 				4E5F31102BC4256500356231 /* AppClips */,
 				4E5F31502BC83D0A00356231 /* HeroesWatch Watch App */,
+				4EA0177E2BCDDA1600A84B72 /* Preview */,
 			);
 		};
 /* End PBXProject section */
@@ -775,6 +834,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E5F306E2BC35E9200356231 /* Preview Assets.xcassets in Resources */,
+				4EA017782BCDB64F00A84B72 /* vince.jpg in Resources */,
 				4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -798,13 +858,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED7315D2BCB95FF00CE014F /* pretravel-4.png in Resources */,
-				4ED7315E2BCB95FF00CE014F /* pretravel-5.png in Resources */,
-				4ED7315B2BCB95FF00CE014F /* pretravel-2.png in Resources */,
-				4ED7315A2BCB95FF00CE014F /* pretravel-1.png in Resources */,
-				4ED731602BCB95FF00CE014F /* video.mp4 in Resources */,
-				4ED7315C2BCB95FF00CE014F /* pretravel-3.png in Resources */,
-				4ED7315F2BCB95FF00CE014F /* smallvid.mp4 in Resources */,
+				4EA0179C2BCE158300A84B72 /* highlights.mp4 in Resources */,
+				4EA017982BCE149700A84B72 /* heroes-3.jpg in Resources */,
+				4EA0179A2BCE149700A84B72 /* heroes-2.jpg in Resources */,
+				4EA017992BCE149700A84B72 /* heroes-1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,10 +900,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA0179E2BCE32A200A84B72 /* highlights.mp4 in Resources */,
 				4E5F315B2BC83D0C00356231 /* Preview Assets.xcassets in Resources */,
-				4E8F644D2BCA346A005F55C7 /* PushNotificationPayload.apns in Resources */,
 				4E5F31582BC83D0C00356231 /* Assets.xcassets in Resources */,
 				4E8F644B2BCA3204005F55C7 /* test.apns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EA0177D2BCDDA1600A84B72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,6 +998,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4EA0177B2BCDDA1600A84B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA017842BCDDA1700A84B72 /* PreviewViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -990,6 +1062,12 @@
 			platformFilter = ios;
 			target = 4E5F31502BC83D0A00356231 /* HeroesWatch Watch App */;
 			targetProxy = 4E5F315C2BC83D0C00356231 /* PBXContainerItemProxy */;
+		};
+		4EA0178C2BCDDA1700A84B72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 4EA0177E2BCDDA1600A84B72 /* Preview */;
+			targetProxy = 4EA0178B2BCDDA1700A84B72 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1724,6 +1802,61 @@
 			};
 			name = Release;
 		};
+		4EA0178F2BCDDA1700A84B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP7UUHBXPL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Preview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Preview;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.Preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EA017902BCDDA1700A84B72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP7UUHBXPL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Preview/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Preview;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo.Preview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1817,6 +1950,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4EA0178E2BCDDA1700A84B72 /* Build configuration list for PBXNativeTarget "Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA0178F2BCDDA1700A84B72 /* Debug */,
+				4EA017902BCDDA1700A84B72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1877,6 +2019,14 @@
 			productName = HeroShared;
 		};
 		4E5F31812BC8BA8400356231 /* HeroShared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroShared;
+		};
+		4EA017912BCDDB3F00A84B72 /* HeroiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HeroiOS;
+		};
+		4EA017932BCDDB4400A84B72 /* HeroShared */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HeroShared;
 		};

@@ -24,7 +24,7 @@ public extension Image {
             .symbolRenderingMode(.palette)
             .foregroundStyle(Color.heroOrange, Color.heroBlue)
     }
-    
+    #if os(iOS)
     @MainActor
     func getUIImage(newSize: CGSize) -> UIImage? {
         let image = resizable()
@@ -33,4 +33,5 @@ public extension Image {
             .clipped()
         return ImageRenderer(content: image).uiImage
     }
+    #endif
 }

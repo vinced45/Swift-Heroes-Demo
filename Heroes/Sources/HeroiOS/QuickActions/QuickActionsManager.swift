@@ -20,30 +20,30 @@ public class QuickActionsManager {
     public var quickAction: QuickAction? = nil
 
     public func handleQaItem(type: String) {
-        if  type == "Search" {
-            quickAction = .search
-        } else if type == "Send" {
-            quickAction = .bookmark
+        if  type == "FAQ" {
+            quickAction = .faq
+        } else if type == "Vince" {
+            quickAction = .vince
         }
     }
     
     public func addQuickActions() {
         #if os(iOS)
         UIApplication.shared.shortcutItems = [
-            UIApplicationShortcutItem(type: "Search",
-                                      localizedTitle: "Searhing",
-                                      localizedSubtitle: "Find me",
-                                      icon: UIApplicationShortcutIcon.init(type: .search)),
-            UIApplicationShortcutItem(type: "Send",
-                                      localizedTitle: "Send",
-                                      localizedSubtitle: "Bookmark me",
-                                      icon: UIApplicationShortcutIcon.init(type: .bookmark)),
+            UIApplicationShortcutItem(type: "FAQ",
+                                      localizedTitle: "Show FAQ",
+                                      localizedSubtitle: "Show FAQ for Extensions",
+                                      icon: UIApplicationShortcutIcon.init(systemImageName: "info.circle")),
+            UIApplicationShortcutItem(type: "Vince",
+                                      localizedTitle: "Show Vince",
+                                      localizedSubtitle: "Show Speaker Profile for Vince",
+                                      icon: UIApplicationShortcutIcon.init(templateImageName: "vince")),
         ]
         #endif
     }
 }
 
 public enum QuickAction: String, Hashable {
-    case search
-    case bookmark
+    case faq
+    case vince
 }

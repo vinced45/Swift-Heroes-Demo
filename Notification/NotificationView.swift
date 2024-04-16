@@ -2,6 +2,7 @@ import SwiftUI
 import Foundation
 import Observation
 import AVKit
+import HeroShared
 
 let appgroup = "group.com.45bitcode.UnitedWidgets"
 
@@ -12,17 +13,15 @@ public class NotificationModel: NSObject {
     }
     public var catergory: String = ""
     public var images: [URL?] = [
-        Bundle.main.url(forResource: "pretravel-1", withExtension: "png"),
-        Bundle.main.url(forResource: "pretravel-2", withExtension: "png"),
-        Bundle.main.url(forResource: "pretravel-3", withExtension: "png"),
-        Bundle.main.url(forResource: "pretravel-4", withExtension: "png"),
-        Bundle.main.url(forResource: "pretravel-5", withExtension: "png")
+        Bundle.main.url(forResource: "heroes-1", withExtension: "jpg"),
+        Bundle.main.url(forResource: "heroes-2", withExtension: "jpg"),
+        Bundle.main.url(forResource: "heroes-3", withExtension: "jpg")
     ]
     public var starCount: Int = 3
     public var selection: Int = 0
-    public var label: String = "huh"
+    public var label: String = ""
     public var start: Double = 1.0
-    public var player: AVPlayer = AVPlayer(url: Bundle.main.url(forResource: "video", withExtension: "mp4")!)
+    public var player: AVPlayer = AVPlayer(url: Bundle.main.url(forResource: "highlights", withExtension: "mp4")!)
     public func set(text: String) {
         label = text
     }
@@ -66,18 +65,29 @@ public struct NotificationView: View {
         }
     }
     var defaultView: some View {
-        VStack(alignment: .center) {
-            Image("United_logo")
-                .resizable()
-                .frame(height: 20)
-                .padding(.horizontal)
-    
-            Text("How was your flight with us today?")
-                .font(.title2)
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [.heroOrange,.heroBlue ]), startPoint: .top, endPoint: .bottom)
             
-            starRow
+            VStack(alignment: .center) {
+                HStack {
+                    Image.logo
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .cornerRadius(10.0)
+                    
+                    Image.wordLogo
+                        .resizable()
+                        .frame(height: 75)
+                }
+        
+                Text("How did you enjoy the talk?")
+                    .font(.title2)
+                
+                starRow
+            }
+            .ignoresSafeArea()
+            .padding()
         }
-        .padding()
     }
     
     var starRow: some View {
@@ -96,28 +106,32 @@ public struct NotificationView: View {
     }
     
     var imageCarosel: some View {
-        TabView(selection: $viewModel.selection) {
-            ForEach(0..<viewModel.images.count) { i in
-                AsyncImage(
-                    url: viewModel.images[i],
-                    content: { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                             //.frame(maxWidth: 300, maxHeight: 100)
-                    },
-                    placeholder: {
-                        ProgressView()
-                    }
-                )
-                .tag(i)
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [.heroOrange,.heroBlue ]), startPoint: .top, endPoint: .bottom)
+            
+            TabView(selection: $viewModel.selection) {
+                ForEach(0..<viewModel.images.count) { i in
+                    AsyncImage(
+                        url: viewModel.images[i],
+                        content: { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                 //.frame(maxWidth: 300, maxHeight: 100)
+                        },
+                        placeholder: {
+                            ProgressView()
+                        }
+                    )
+                    .tag(i)
+                }
             }
-        }
-        #if os(iOS)
-        .tabViewStyle(PageTabViewStyle())
-        #endif
-        .animation(.easeInOut) // 2
-        .transition(.slide) // 3
+            #if os(iOS)
+            .tabViewStyle(PageTabViewStyle())
+            #endif
+            .animation(.easeInOut) // 2
+            .transition(.slide) // 3
+        }.ignoresSafeArea()
     }
 }
 

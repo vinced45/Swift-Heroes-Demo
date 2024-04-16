@@ -81,6 +81,12 @@ public extension ExtensionItem {
                   image: Image(systemName: "tv"),
                   platforms: [.iphone, .ipad]
                  ),
+            .init(id: "100",
+                  name: "Quick Look Preview",
+                  desc: "",
+                  image: Image(systemName: "eye.fill"),
+                  platforms: [.iphone, .ipad]
+                 ),
         ]
     }
 }

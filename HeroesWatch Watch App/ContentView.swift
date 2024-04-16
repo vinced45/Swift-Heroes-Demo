@@ -23,6 +23,7 @@ struct ContentView: View {
                         item.image.resizable().frame(width: 20, height: 20)
                         Text(item.title)
                     }
+                    .containerBackground(Color.heroOrange.gradient, for: .navigation)
                 })
             }
         }, detail: {
@@ -32,6 +33,7 @@ struct ContentView: View {
                     
                     Text(item.title)
                 }
+                .containerBackground(Color.heroOrange.gradient, for: .navigation)
                 .userActivity(activityType, element: item, { element, activity in
                     let bundleid = Bundle.main.bundleIdentifier ?? ""
                     activity.addUserInfoEntries(from: ["id": item.id,
@@ -49,15 +51,6 @@ struct ContentView: View {
             )
         }
         
-    }
-    
-    func auth() {
-        task {
-            let center = UNUserNotificationCenter.current()
-            _ = try? await center.requestAuthorization(
-                options: [.alert, .sound, .badge]
-            )
-        }
     }
     
     func logUserActivity(_ activity: NSUserActivity, label: String = "") {
