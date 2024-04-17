@@ -37,7 +37,7 @@ class ShareViewController: UIViewController {
                             if let imageURL = imageURL as? URL {
                                 print("share found")
                                 let image = UIImage(data: try! Data(contentsOf: imageURL))
-                                let shareView = ShareView(image: image)
+                                let shareView = ShareView(image: image, action: self.done)
                                 self.add(swiftUIView: AnyView(shareView))
                             }
                         }

@@ -35,7 +35,7 @@ class ActionViewController: UIViewController {
                         OperationQueue.main.addOperation {
                             if let imageURL = imageURL as? URL {
                                 let image = UIImage(data: try! Data(contentsOf: imageURL))
-                                let shareView = ShareView(image: image)
+                                let shareView = ShareView(image: image, action: self.done)
                                 self.add(swiftUIView: AnyView(shareView))
                             }
                         }
