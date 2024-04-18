@@ -22,13 +22,17 @@ public struct ShareView: View {
     }
     #elseif os(macOS)
     public  var image: NSImage?
-    public init(image: NSImage? = nil) {
+    public var action: (() -> Void)
+    public init(image: NSImage? = nil, action: @escaping (() -> Void)) {
         self.image = image
+        self.action = action
     }
     #else
     public  var image: Image?
-    public init(image: Image? = nil) {
+    public var action: (() -> Void)
+    public init(image: Image? = nil, action: @escaping (() -> Void)) {
         self.image = image
+        self.action = action
     }
     #endif
     
