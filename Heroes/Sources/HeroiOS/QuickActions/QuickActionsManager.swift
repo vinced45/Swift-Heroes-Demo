@@ -22,8 +22,8 @@ public class QuickActionsManager {
     public func handleQaItem(type: String) {
         if  type == "FAQ" {
             quickAction = .faq
-        } else if type == "Vince" {
-            quickAction = .vince
+        } else if type == "alberto" {
+            quickAction = .alberto
         }
     }
     
@@ -33,11 +33,11 @@ public class QuickActionsManager {
             UIApplicationShortcutItem(type: "FAQ",
                                       localizedTitle: "Show FAQ",
                                       localizedSubtitle: "Show FAQ for Extensions",
-                                      icon: UIApplicationShortcutIcon.init(systemImageName: "info.circle")),
-            UIApplicationShortcutItem(type: "Vince",
-                                      localizedTitle: "Show Vince",
-                                      localizedSubtitle: "Show Speaker Profile for Vince",
-                                      icon: UIApplicationShortcutIcon.init(templateImageName: "vince")),
+                                      icon: UIApplicationShortcutIcon.init(systemImageName: "questionmark.app")),
+            UIApplicationShortcutItem(type: "alberto",
+                                      localizedTitle: "Show Alberto",
+                                      localizedSubtitle: "Show Speaker Profile for Alberto",
+                                      icon: UIApplicationShortcutIcon.init(systemImageName: "music.mic")),
         ]
         #endif
     }
@@ -45,5 +45,5 @@ public class QuickActionsManager {
 
 public enum QuickAction: String, Hashable {
     case faq
-    case vince
+    case alberto
 }

@@ -26,7 +26,39 @@ public extension Speaker {
     static var all: [Speaker] {
         return [
             .alex,
-            .alberto
+            .alberto,
+            .andrea,
+            .andrei,
+            .batuhan,
+            .beyza,
+            .borbala,
+            .brad,
+            .davide,
+            .davide2,
+            .emilio,
+            .flora,
+            .gyuree,
+            .jane,
+            .josip,
+            .krysztof,
+            .libranner,
+            .lukasz,
+            .marcin,
+            .marco,
+            .mete,
+            .michael,
+            .natan,
+            .pedro,
+            .peter,
+            .pietro,
+            .pol,
+            .pradnya,
+            .sara,
+            .shai,
+            .stefano,
+            .vince,
+            .vincenzo,
+            .zach
         ]
     }
     
@@ -67,7 +99,7 @@ public extension Speaker {
                                         desc: "",
                                         image: .davide)
     static var davide2: Speaker = .init(id: "10",
-                                        name: "Davide2",
+                                        name: "Davide",
                                         desc: "",
                                         image: .davide2)
     static var emilio: Speaker = .init(id: "11",
@@ -154,15 +186,15 @@ public extension Speaker {
                                         name: "Stefano",
                                         desc: "",
                                         image: .stefano)
-    static var vince: Speaker = .init(id: "31",
+    static var vince: Speaker = .init(id: "32",
                                         name: "Vince",
                                         desc: "",
                                         image: .vince)
-    static var vincenzo: Speaker = .init(id: "32",
+    static var vincenzo: Speaker = .init(id: "33",
                                         name: "Vincenzo",
                                         desc: "",
                                         image: .vincenzo)
-    static var zach: Speaker = .init(id: "33",
+    static var zach: Speaker = .init(id: "34",
                                         name: "Zach",
                                         desc: "",
                                         image: .zach)

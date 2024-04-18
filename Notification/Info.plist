@@ -17,6 +17,8 @@
 			<true/>
 			<key>UNNotificationExtensionInitialContentSizeRatio</key>
 			<real>0.25</real>
+			<key>UNNotificationExtensionUserInteractionEnabled</key>
+			<true/>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.usernotifications.content-extension</string>

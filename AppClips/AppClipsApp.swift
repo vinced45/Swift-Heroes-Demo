@@ -16,12 +16,8 @@ struct AppClipsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SpeakerListView()
                 .environment(screenManager)
-                .externalScreen($screenManager.showScreen) {
-                    ExternalScreenView()
-                        .environment(screenManager)
-                }
         }
     }
 }

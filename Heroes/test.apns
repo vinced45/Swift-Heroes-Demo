@@ -1,8 +1,8 @@
 {
     "aps": {
         "alert": {
-            "title": "Silver Salmon Creek",
-            "body": "You are within 5 miles of Silver Salmon Creek."
+            "title": "Cool Video",
+            "body": "You can do video on Apple Watch!"
         },
         "category": "LandmarkNear",
         "thread-id": "5280"

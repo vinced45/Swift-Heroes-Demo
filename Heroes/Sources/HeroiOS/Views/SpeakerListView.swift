@@ -20,18 +20,31 @@ public struct SpeakerListView: View {
 
     public init() {}
     
+    let columns = [
+        GridItem(.flexible()),
+            GridItem(.flexible()),
+        ]
+    
     public var body: some View {
         NavigationStack {
-            List(Speaker.all) { speaker in
-                HStack {
-                    speaker.image
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                    
-                    Text(speaker.name)
+            ScrollView {
+                LazyVGrid(columns: columns, spacing: 20) {
+                    ForEach(Speaker.all, id: \.id) { speaker in
+                        VStack {
+                            speaker.image
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                .cornerRadius(15.0)
+                            
+                            Text(speaker.title)
+                                .font(.title3)
+                                .bold()
+                        }
+                    }
                 }
+                .padding(.horizontal)
             }
-            .customListStyle()
+            .padding()
             .navigationTitle("Speakers")
             .customToolBarStyle()
             .externalScreenToolbar(screenManager: screenManager, showingSheet: $isSheetPresented)

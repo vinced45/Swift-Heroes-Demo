@@ -36,12 +36,14 @@ public struct ExternalScreenView: View {
                 
                 speaker.image
                     .resizable()
-                    .frame(width: 250, height: 250)
+                    .frame(width: 290, height: 290)
                     .cornerRadius(15.0)
                 
                 Text(speaker.name)
                     .font(.largeTitle)
                     .bold()
+                
+                Spacer()
             }
         }
         .ignoresSafeArea()

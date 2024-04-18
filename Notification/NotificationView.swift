@@ -83,7 +83,11 @@ public struct NotificationView: View {
                 Text("How did you enjoy the talk?")
                     .font(.title2)
                 
-                starRow
+                Button(action: {
+                    viewModel.changeRating()
+                }, label: {
+                    starRow
+                })
             }
             .ignoresSafeArea()
             .padding()

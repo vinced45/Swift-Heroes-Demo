@@ -176,12 +176,12 @@ public struct MainView: View {
             let action = quickActionsManager.quickAction?.rawValue ?? ""
             print("Change current action is \(action)")
             if  action == "faq" {
-                isSheetPresented = true
+                selectedItem = .faq
                 print("faq")
             }
-            if action == "vince", let item = findItem(for: "2") {
+            if action == "alberto", let item = findItem(for: "2") {
                 selectedItem = item
-                print("vincy")
+                print("alberto")
             }
         }
         .onChange(of: screenManager.showScreen) { _, newValue in
@@ -191,17 +191,20 @@ public struct MainView: View {
             let action = quickActionsManager.quickAction?.rawValue ?? ""
             print("Current action is \(action)")
             if  action == "faq" {
-                isSheetPresented = true
+                selectedItem = .faq
                 print("faq")
             }
-            if action == "vince", let item = findItem(for: "2") {
+            if action == "alberto", let item = findItem(for: "2") {
                 selectedItem = item
-                print("vincy")
+                print("alberto")
+            }
+            Task {
+                let _ = await Spotlight.deIndexSpeakers()
+                let _ = await Spotlight.indexSpeakers()
             }
         }
         .task {
-            let _ = await Spotlight.deIndexSpeakers()
-            let _ = await Spotlight.indexSpeakers()
+            
         }
     }
     #endif
