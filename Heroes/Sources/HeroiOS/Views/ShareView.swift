@@ -73,6 +73,7 @@ public struct ShareView: View {
                     }
                 }
             }
+            #if os(iOS)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing, content: {
                     Button(action: {
@@ -82,6 +83,7 @@ public struct ShareView: View {
                     })
                 })
             }
+            #endif
         }
     }
 }
