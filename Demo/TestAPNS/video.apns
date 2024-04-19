@@ -1,0 +1,10 @@
+{
+    "aps": {
+    "category" : "video",
+        "alert": {
+            "title": "Swift Heroes Push",
+            "body": "Open this to see our cool video"
+        }
+    },
+    "Simulator Target Bundle": "com.swiftheroes.Demo"
+}

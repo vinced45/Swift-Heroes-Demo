@@ -1,0 +1,10 @@
+{
+    "aps": {
+    "category" : "images",
+        "alert": {
+            "title": "Swift Heroes Slideshow",
+            "body": "This is an example of a slideshow"
+        }
+    },
+    "Simulator Target Bundle": "com.swiftheroes.Demo"
+}

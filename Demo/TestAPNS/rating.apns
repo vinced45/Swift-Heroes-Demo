@@ -1,0 +1,10 @@
+{
+    "aps": {
+    "category" : "default",
+        "alert": {
+            "title": "Swift Heroes Ratings",
+            "body": "Please rate us to tell us how we did."
+        }
+    },
+    "Simulator Target Bundle": "com.swiftheroes.Demo"
+}

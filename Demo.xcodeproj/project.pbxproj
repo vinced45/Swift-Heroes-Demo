@@ -71,6 +71,10 @@
 		4EA0179C2BCE158300A84B72 /* highlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179B2BCE158300A84B72 /* highlights.mp4 */; };
 		4EA0179E2BCE32A200A84B72 /* highlights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179D2BCE32A200A84B72 /* highlights.mp4 */; };
 		4EA017A02BCE486700A84B72 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4EA0179F2BCE486700A84B72 /* Localizable.xcstrings */; };
+		61D6D6D22BD25CA3001C58B2 /* rating.apns in Resources */ = {isa = PBXBuildFile; fileRef = 61D6D6D12BD25CA3001C58B2 /* rating.apns */; };
+		61D6D6D42BD25CD2001C58B2 /* video.apns in Resources */ = {isa = PBXBuildFile; fileRef = 61D6D6D32BD25CD2001C58B2 /* video.apns */; };
+		61D6D6D62BD25CF2001C58B2 /* images.apns in Resources */ = {isa = PBXBuildFile; fileRef = 61D6D6D52BD25CF2001C58B2 /* images.apns */; };
+		61D6D6D82BD25D19001C58B2 /* watchVideo.apns in Resources */ = {isa = PBXBuildFile; fileRef = 61D6D6D72BD25D19001C58B2 /* watchVideo.apns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +247,11 @@
 		4EA0179B2BCE158300A84B72 /* highlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = highlights.mp4; sourceTree = "<group>"; };
 		4EA0179D2BCE32A200A84B72 /* highlights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = highlights.mp4; sourceTree = "<group>"; };
 		4EA0179F2BCE486700A84B72 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		61D6D6D12BD25CA3001C58B2 /* rating.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = rating.apns; sourceTree = "<group>"; };
+		61D6D6D32BD25CD2001C58B2 /* video.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = video.apns; sourceTree = "<group>"; };
+		61D6D6D52BD25CF2001C58B2 /* images.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = images.apns; sourceTree = "<group>"; };
+		61D6D6D72BD25D19001C58B2 /* watchVideo.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = watchVideo.apns; sourceTree = "<group>"; };
+		61D6D6DA2BD262D6001C58B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +353,7 @@
 		4E5F30592BC35E9000356231 = {
 			isa = PBXGroup;
 			children = (
+				61D6D6DA2BD262D6001C58B2 /* README.md */,
 				4E5F30DC2BC3620E00356231 /* Heroes */,
 				4E5F30642BC35E9000356231 /* Demo */,
 				4E5F307C2BC35F3000356231 /* Action */,
@@ -391,6 +401,7 @@
 				4E5F306B2BC35E9200356231 /* Demo.entitlements */,
 				4E5F306C2BC35E9200356231 /* Preview Content */,
 				4EA0179F2BCE486700A84B72 /* Localizable.xcstrings */,
+				61D6D6D92BD25DC3001C58B2 /* TestAPNS */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -534,6 +545,17 @@
 				4EA0179B2BCE158300A84B72 /* highlights.mp4 */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		61D6D6D92BD25DC3001C58B2 /* TestAPNS */ = {
+			isa = PBXGroup;
+			children = (
+				61D6D6D12BD25CA3001C58B2 /* rating.apns */,
+				61D6D6D32BD25CD2001C58B2 /* video.apns */,
+				61D6D6D52BD25CF2001C58B2 /* images.apns */,
+				61D6D6D72BD25D19001C58B2 /* watchVideo.apns */,
+			);
+			path = TestAPNS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -831,9 +853,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61D6D6D82BD25D19001C58B2 /* watchVideo.apns in Resources */,
 				4E5F306E2BC35E9200356231 /* Preview Assets.xcassets in Resources */,
+				61D6D6D42BD25CD2001C58B2 /* video.apns in Resources */,
 				4EA017782BCDB64F00A84B72 /* vince.jpg in Resources */,
 				4EA017A02BCE486700A84B72 /* Localizable.xcstrings in Resources */,
+				61D6D6D62BD25CF2001C58B2 /* images.apns in Resources */,
+				61D6D6D22BD25CA3001C58B2 /* rating.apns in Resources */,
 				4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
