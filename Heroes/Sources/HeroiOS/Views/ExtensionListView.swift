@@ -1,5 +1,5 @@
 //
-//  SwiftUIView 2.swift
+//  ExtensionListView 2.swift
 //  
 //
 //  Created by Vince Davis on 4/10/24.
@@ -10,8 +10,6 @@ import HeroShared
 
 public struct ExtensionListView: View {
     @Environment(ScreenManager.self) var screenManager: ScreenManager
-    //@Bindable var screenManager: ScreenManager
-    //@Environment(QuickActionsManager.self) var quickActionsManager: QuickActionsManager
     @State var quickActionsManager = QuickActionsManager.shared
     @State private var isSheetPresented = false
     

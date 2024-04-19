@@ -63,4 +63,3 @@ public struct ExternalScreenViewModifier<ScreenContent: View>: ViewModifier wher
     }
     #endif
 }
-

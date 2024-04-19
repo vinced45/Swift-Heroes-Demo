@@ -1,12 +1,11 @@
 //
-//  File.swift
+//  Image.swift
 //  
 //
 //  Created by Vince Davis on 4/8/24.
 //
 
 import SwiftUI
-
 
 public extension Image {
     static let alberto = Image("alberto", bundle: .module)

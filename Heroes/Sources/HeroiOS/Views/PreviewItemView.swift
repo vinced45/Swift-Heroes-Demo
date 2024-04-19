@@ -1,5 +1,5 @@
 //
-//  SwiftUIView 2.swift
+//  PreviewItemView.swift
 //  
 //
 //  Created by Vince Davis on 4/15/24.
@@ -13,7 +13,6 @@ public struct PreviewItemView: View {
     public init(identifier: String) {
         self.identifier = identifier
     }
-    //@State private var speaker: Speaker?
     
     public var body: some View {
         if let speaker = Speaker.all.filter({ $0.id == identifier }).first {

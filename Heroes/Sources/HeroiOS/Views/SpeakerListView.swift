@@ -1,5 +1,5 @@
 //
-//  SwiftUIView 2.swift
+//  SpeakerListView.swift
 //  
 //
 //  Created by Vince Davis on 4/9/24.
@@ -13,8 +13,7 @@ let activityType = "com.swiftheroes.speakers"
 
 public struct SpeakerListView: View {
     @Environment(ScreenManager.self) var screenManager: ScreenManager
-    //@Bindable var screenManager: ScreenManager
-    //@Environment(QuickActionsManager.self) var quickActionsManager: QuickActionsManager
+    
     @State var quickActionsManager = QuickActionsManager.shared
     @State private var isSheetPresented = false
 

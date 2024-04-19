@@ -4,9 +4,8 @@
             "title": "Cool Video",
             "body": "You can do video on Apple Watch!"
         },
-        "category": "LandmarkNear",
+        "category": "video",
         "thread-id": "5280"
     },
-    "landmarkIndex": 1,
     "Simulator Target Bundle": "com.swiftheroes.Demo.watchkitapp"
 }

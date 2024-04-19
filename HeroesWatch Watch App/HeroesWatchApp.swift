@@ -21,7 +21,7 @@ struct HeroesWatch_Watch_AppApp: App {
             ContentView()
         }
         
-       WKNotificationScene(controller: NotificationController.self, category: "LandmarkNear")
+       WKNotificationScene(controller: NotificationController.self, category: "video")
     }
 }
 

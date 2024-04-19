@@ -1,5 +1,5 @@
 //
-//  SwiftUIView 2.swift
+//  MainView.swift
 //  
 //
 //  Created by Vince Davis on 4/10/24.
@@ -259,11 +259,6 @@ public struct MainView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300)
-//                            .matchedGeometryEffect(id: item.id,
-//                                                   in: namespace,
-//                                                   /*properties: .frame,
-//                                                   anchor: .leading,*/
-//                                                   isSource: item.id == selectedItem?.id ?? "")
             
             Text(item.title)
             Text(item.subtitle)
@@ -274,7 +269,6 @@ public struct MainView: View {
             activity.addUserInfoEntries(from: ["id": item.id,
                                                "name": item.title,
                                                "setby": bundleid])
-            //activity.el
             logUserActivity(activity, label: "Item")
         })
     }

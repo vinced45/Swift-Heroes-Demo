@@ -19,12 +19,6 @@ class ShareViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        //preferredContentSize = CGSize(width: 320, height: 300)
-//        let shareView = ShareView(action: { image in
-//            self.done()
-//        })
-//        self.add(swiftUIView: AnyView(shareView))
-        //self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
         var imageFound = false
         print("share started")
         for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
@@ -70,9 +64,7 @@ class ShareViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             
-        //preferredContentSize = CGSize(width: 320, height: 300)
         self.add(swiftUIView: AnyView(SwiftUIView(action: close)))
-        //self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
     }
 
     /// Close the Share Extension

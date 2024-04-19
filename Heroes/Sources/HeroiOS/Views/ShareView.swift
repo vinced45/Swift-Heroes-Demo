@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  ShareView.swift
 //
 //
 //  Created by Vince Davis on 4/14/24.
@@ -10,9 +10,6 @@ import SwiftUI
 import HeroShared
 
 public struct ShareView: View {
-//    public init(action: @escaping ((Image?) -> Void)) {
-//        self.action = action
-//    }
     #if os(iOS)
     public var image: UIImage?
     public var action: (() -> Void)

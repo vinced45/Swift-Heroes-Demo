@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  ExternalScreenControlView.swift
 //  
 //
 //  Created by Vince Davis on 4/15/24.

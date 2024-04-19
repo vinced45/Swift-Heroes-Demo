@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4E2904042BCB768E00752A3F /* NotificationViewController+UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */; };
 		4E5F30662BC35E9000356231 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30652BC35E9000356231 /* DemoApp.swift */; };
-		4E5F30682BC35E9000356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30672BC35E9000356231 /* ContentView.swift */; };
 		4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30692BC35E9200356231 /* Assets.xcassets */; };
 		4E5F306E2BC35E9200356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F306D2BC35E9200356231 /* Preview Assets.xcassets */; };
 		4E5F307B2BC35F3000356231 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F307A2BC35F3000356231 /* UniformTypeIdentifiers.framework */; };
@@ -33,7 +32,6 @@
 		4E5F30F72BC380BF00356231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30F62BC380BF00356231 /* AppDelegate.swift */; };
 		4E5F310C2BC420D500356231 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31032BC420D500356231 /* NotificationView.swift */; };
 		4E5F31142BC4256500356231 /* AppClipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31132BC4256500356231 /* AppClipsApp.swift */; };
-		4E5F31162BC4256500356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31152BC4256500356231 /* ContentView.swift */; };
 		4E5F31182BC4256700356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31172BC4256700356231 /* Assets.xcassets */; };
 		4E5F311B2BC4256700356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F311A2BC4256700356231 /* Preview Assets.xcassets */; };
 		4E5F31202BC4256700356231 /* AppClips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4E5F31112BC4256500356231 /* AppClips.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -187,7 +185,6 @@
 		4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationViewController+UserNotifications.swift"; sourceTree = "<group>"; };
 		4E5F30622BC35E9000356231 /* Swift Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F30652BC35E9000356231 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
-		4E5F30672BC35E9000356231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E5F30692BC35E9200356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5F306B2BC35E9200356231 /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
 		4E5F306D2BC35E9200356231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -220,7 +217,6 @@
 		4E5F31032BC420D500356231 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		4E5F31112BC4256500356231 /* AppClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F31132BC4256500356231 /* AppClipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipsApp.swift; sourceTree = "<group>"; };
-		4E5F31152BC4256500356231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E5F31172BC4256700356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5F311A2BC4256700356231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4E5F311C2BC4256700356231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -391,7 +387,6 @@
 				4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */,
 				4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */,
 				4E5F312D2BC7165100356231 /* SceneDelegate.swift */,
-				4E5F30672BC35E9000356231 /* ContentView.swift */,
 				4E5F30692BC35E9200356231 /* Assets.xcassets */,
 				4E5F306B2BC35E9200356231 /* Demo.entitlements */,
 				4E5F306C2BC35E9200356231 /* Preview Content */,
@@ -483,7 +478,6 @@
 			isa = PBXGroup;
 			children = (
 				4E5F31132BC4256500356231 /* AppClipsApp.swift */,
-				4E5F31152BC4256500356231 /* ContentView.swift */,
 				4E5F31172BC4256700356231 /* Assets.xcassets */,
 				4E5F311C2BC4256700356231 /* Info.plist */,
 				4E5F311D2BC4256700356231 /* AppClips.entitlements */,
@@ -929,7 +923,6 @@
 				4E5F31302BC7382D00356231 /* AppDelegate+Notifications.swift in Sources */,
 				4E5F312E2BC7165100356231 /* SceneDelegate.swift in Sources */,
 				4E5F30F72BC380BF00356231 /* AppDelegate.swift in Sources */,
-				4E5F30682BC35E9000356231 /* ContentView.swift in Sources */,
 				4E5F31322BC7389600356231 /* AppDelegate+QuickActions.swift in Sources */,
 				4E5F30662BC35E9000356231 /* DemoApp.swift in Sources */,
 			);
@@ -989,7 +982,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F31162BC4256500356231 /* ContentView.swift in Sources */,
 				4E5F31142BC4256500356231 /* AppClipsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

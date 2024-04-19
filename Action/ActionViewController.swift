@@ -18,14 +18,6 @@ class ActionViewController: UIViewController {
         super.viewDidLoad()
     
         // Get the item[s] we're handling from the extension context.
-        
-        // For example, look for an image and place it into an image view.
-        // Replace this with something appropriate for the type[s] your extension supports.
-//        let shareView = ShareView(action: { image in
-//            self.done()
-//        })
-//        self.add(swiftUIView: AnyView(shareView))
-        
         var imageFound = false
         for item in self.extensionContext!.inputItems as! [NSExtensionItem] {
             for provider in item.attachments! {

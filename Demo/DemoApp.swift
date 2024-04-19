@@ -58,13 +58,5 @@ struct DemoApp: App {
                 inBackground = false
             }
         }
-    }
-#if os(iOS)
-    func handleSpotlight(userActivity: NSUserActivity) {
-        print("Handling Spotlight item main")
-        //if let id = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String,
-        
-    }
-#endif
-    
+    }    
 }
