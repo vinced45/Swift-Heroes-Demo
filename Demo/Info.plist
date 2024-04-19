@@ -5,17 +5,21 @@
 	<key>CoreSpotlightActions</key>
 	<array>
 		<dict>
-			<key>CoreSpotlightActionTitle</key>
-			<string>Test Me</string>
-			<key>CoreSpotlightActionSymbolImage</key>
-			<string>pencil</string>
 			<key>CoreSpotlightActionIdentifier</key>
 			<string>CS_ACTION_1</string>
+			<key>CoreSpotlightActionSymbolImage</key>
+			<string>pencil</string>
+			<key>CoreSpotlightActionTitle</key>
+			<string>Test Me</string>
 		</dict>
 	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>com.swiftheroes.speakers</string>
 	</array>
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
 </dict>
 </plist>

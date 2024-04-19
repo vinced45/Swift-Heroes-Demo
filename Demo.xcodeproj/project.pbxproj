@@ -17,7 +17,7 @@
 		4E5F30802BC35F3000356231 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F307F2BC35F3000356231 /* ActionViewController.swift */; };
 		4E5F30872BC35F3000356231 /* Action.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30782BC35F3000356231 /* Action.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30932BC35FAD00356231 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30922BC35FAD00356231 /* ShareViewController.swift */; };
-		4E5F309A2BC35FAD00356231 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30902BC35FAD00356231 /* Share.appex */; platformFilters = (ios, macos, ); settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4E5F309A2BC35FAD00356231 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30902BC35FAD00356231 /* Share.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30A42BC35FFF00356231 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F30A32BC35FFF00356231 /* UserNotifications.framework */; };
 		4E5F30A62BC35FFF00356231 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F30A52BC35FFF00356231 /* UserNotificationsUI.framework */; };
 		4E5F30A92BC35FFF00356231 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30A82BC35FFF00356231 /* NotificationViewController.swift */; };
@@ -1022,10 +1022,7 @@
 		};
 		4E5F30992BC35FAD00356231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilters = (
-				ios,
-				macos,
-			);
+			platformFilter = ios;
 			target = 4E5F308F2BC35FAD00356231 /* Share */;
 			targetProxy = 4E5F30982BC35FAD00356231 /* PBXContainerItemProxy */;
 		};

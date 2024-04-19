@@ -24,6 +24,16 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>My Cool Extension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>NewExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>Notification.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
