@@ -20,8 +20,8 @@ public class QuickActionsManager {
     public var quickAction: QuickAction? = nil
 
     public func handleQaItem(type: String) {
-        if  type == "FAQ" {
-            quickAction = .faq
+        if  type == "share" {
+            quickAction = .share
         } else if type == "alberto" {
             quickAction = .alberto
         }
@@ -30,10 +30,10 @@ public class QuickActionsManager {
     public func addQuickActions() {
         #if os(iOS)
         UIApplication.shared.shortcutItems = [
-            UIApplicationShortcutItem(type: "FAQ",
-                                      localizedTitle: "Show FAQ",
-                                      localizedSubtitle: "Show FAQ for Extensions",
-                                      icon: UIApplicationShortcutIcon.init(systemImageName: "questionmark.app")),
+            UIApplicationShortcutItem(type: "share",
+                                      localizedTitle: "Show Share",
+                                      localizedSubtitle: "Show Share for Extensions",
+                                      icon: UIApplicationShortcutIcon.init(systemImageName: "square.and.arrow.up")),
             UIApplicationShortcutItem(type: "alberto",
                                       localizedTitle: "Show Alberto",
                                       localizedSubtitle: "Show Speaker Profile for Alberto",
@@ -44,6 +44,6 @@ public class QuickActionsManager {
 }
 
 public enum QuickAction: String, Hashable {
-    case faq
+    case share
     case alberto
 }

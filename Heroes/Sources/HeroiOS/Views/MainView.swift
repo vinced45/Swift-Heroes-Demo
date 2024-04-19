@@ -17,10 +17,9 @@ public struct MainView: View {
     @State var screenManager = ScreenManager()
     @State var quickActionsManager = QuickActionsManager.shared
     @State private var isSheetPresented = false
-    @State private var showFaq = false
     @State var selectedItem: ListItem? = nil
     
-    @State var items: [ListItem] = [.speakers, .extensions, .faq]
+    @State var items: [ListItem] = [.speakers, .extensions]
     
     @Namespace var namespace
     
@@ -138,7 +137,7 @@ public struct MainView: View {
                     case .speaker, .extensionItem:
                         speakerView(for: item)
                     default:
-                        FAQView()
+                        EmptyView()
                     }
                 } else {
                     ContentUnavailableView("Nothing selected", systemImage: "cloud.fill")
@@ -148,9 +147,6 @@ public struct MainView: View {
         .sheet(isPresented: $isSheetPresented) {
             ExternalScreenControlView(viewModel: screenManager)
                .presentationDetents([.fraction(0.33), .medium])
-         }
-        .sheet(isPresented: $showFaq) {
-            FAQView()
          }
         .onOpenURL { url in
             print("Received URL: \(url)")
@@ -175,9 +171,9 @@ public struct MainView: View {
         .onChange(of: quickActionsManager.quickAction) { _, _ in
             let action = quickActionsManager.quickAction?.rawValue ?? ""
             print("Change current action is \(action)")
-            if  action == "faq" {
-                selectedItem = .faq
-                print("faq")
+            if  action == "share" {
+                selectedItem = findItem(for: "200")
+                print("share")
             }
             if action == "alberto", let item = findItem(for: "2") {
                 selectedItem = item
@@ -190,9 +186,9 @@ public struct MainView: View {
         .onAppear {
             let action = quickActionsManager.quickAction?.rawValue ?? ""
             print("Current action is \(action)")
-            if  action == "faq" {
-                selectedItem = .faq
-                print("faq")
+            if  action == "share" {
+                selectedItem = findItem(for: "200")
+                print("share")
             }
             if action == "alberto", let item = findItem(for: "2") {
                 selectedItem = item

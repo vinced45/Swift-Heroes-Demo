@@ -52,12 +52,4 @@ public extension ListItem {
                                      badges: [],
                                      type: .sectionHeader,
                                      items: ExtensionItem.all.map({ ListItem(id : $0.id, title: $0.title, subtitle: $0.subtitle, image: $0.image, badges: $0.platforms, type: .extensionItem) }))
-    
-    static let faq = ListItem(id: "3000",
-                                     title: "FAQ",
-                                     subtitle: "FAQ",
-                                     image: Image(systemName: "questionmark.bubble.fill"),
-                                     badges: [],
-                                     type: .faq,
-                                     items: [])
 }

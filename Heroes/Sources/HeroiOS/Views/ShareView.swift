@@ -64,15 +64,14 @@ public struct ShareView: View {
                         
                         newImage.resizable().frame(width: 300, height: 300)
                         Text("Found Image")
-                        //Button("Add", action: { action(newImage) })
                     }
                 } else {
                     VStack {
                         Text("Bad Image")
-                        //Button("Close", action: { action(nil) })
                     }
                 }
             }
+            .ignoresSafeArea()
             #if os(iOS)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing, content: {
@@ -87,7 +86,3 @@ public struct ShareView: View {
         }
     }
 }
-
-//#Preview {
-//    //ShareView(action: {_ in })
-//}
