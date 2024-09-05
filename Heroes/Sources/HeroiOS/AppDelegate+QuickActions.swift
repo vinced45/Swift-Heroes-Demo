@@ -6,14 +6,12 @@
 //
 
 import Foundation
-import HeroiOS
-import HeroShared
 
 #if os(iOS)
 import UIKit
 
-extension AppDelegate {
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+public extension AppDelegate {
+    public func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         
         if let shortcutItem = options.shortcutItem {
             print("App delegate quick action")

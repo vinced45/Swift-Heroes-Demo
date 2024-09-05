@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E2904042BCB768E00752A3F /* NotificationViewController+UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */; };
+		4E3490D32C8A17F600B30345 /* SFSymbolsMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3490D22C8A17F600B30345 /* SFSymbolsMacro */; };
+		4E44A5082C8A076400B1F97B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44A5072C8A075D00B1F97B /* TestView.swift */; };
 		4E5F30662BC35E9000356231 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30652BC35E9000356231 /* DemoApp.swift */; };
 		4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30692BC35E9200356231 /* Assets.xcassets */; };
 		4E5F306E2BC35E9200356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F306D2BC35E9200356231 /* Preview Assets.xcassets */; };
@@ -29,15 +31,11 @@
 		4E5F30D52BC3606300356231 /* Spotlight.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30CE2BC3606300356231 /* Spotlight.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4E5F30E82BC3659600356231 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30E72BC3659600356231 /* NotificationService.swift */; };
 		4E5F30EC2BC3659600356231 /* NotificationService.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4E5F30E52BC3659600356231 /* NotificationService.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4E5F30F72BC380BF00356231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30F62BC380BF00356231 /* AppDelegate.swift */; };
 		4E5F310C2BC420D500356231 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31032BC420D500356231 /* NotificationView.swift */; };
 		4E5F31142BC4256500356231 /* AppClipsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31132BC4256500356231 /* AppClipsApp.swift */; };
 		4E5F31182BC4256700356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31172BC4256700356231 /* Assets.xcassets */; };
 		4E5F311B2BC4256700356231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F311A2BC4256700356231 /* Preview Assets.xcassets */; };
 		4E5F31202BC4256700356231 /* AppClips.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 4E5F31112BC4256500356231 /* AppClips.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		4E5F312E2BC7165100356231 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F312D2BC7165100356231 /* SceneDelegate.swift */; };
-		4E5F31302BC7382D00356231 /* AppDelegate+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */; };
-		4E5F31322BC7389600356231 /* AppDelegate+QuickActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */; };
 		4E5F31542BC83D0A00356231 /* HeroesWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */; };
 		4E5F31562BC83D0A00356231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F31552BC83D0A00356231 /* ContentView.swift */; };
 		4E5F31582BC83D0C00356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F31572BC83D0C00356231 /* Assets.xcassets */; };
@@ -58,6 +56,7 @@
 		4E5F317E2BC8BA7900356231 /* HeroiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317D2BC8BA7900356231 /* HeroiOS */; };
 		4E5F31802BC8BA7C00356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F317F2BC8BA7C00356231 /* HeroShared */; };
 		4E5F31822BC8BA8400356231 /* HeroShared in Frameworks */ = {isa = PBXBuildFile; productRef = 4E5F31812BC8BA8400356231 /* HeroShared */; };
+		4E826DAD2BD73FD40026A2C7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E826DAC2BD73FD40026A2C7 /* UserNotifications.framework */; };
 		4E8F644B2BCA3204005F55C7 /* test.apns in Resources */ = {isa = PBXBuildFile; fileRef = 4E8F644A2BCA3204005F55C7 /* test.apns */; };
 		4EA017782BCDB64F00A84B72 /* vince.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA017772BCDB64F00A84B72 /* vince.jpg */; };
 		4EA017812BCDDA1700A84B72 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA017802BCDDA1700A84B72 /* QuickLook.framework */; };
@@ -187,6 +186,7 @@
 
 /* Begin PBXFileReference section */
 		4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationViewController+UserNotifications.swift"; sourceTree = "<group>"; };
+		4E44A5072C8A075D00B1F97B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		4E5F30622BC35E9000356231 /* Swift Heroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Heroes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F30652BC35E9000356231 /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
 		4E5F30692BC35E9200356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -217,7 +217,6 @@
 		4E5F30E52BC3659600356231 /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F30E72BC3659600356231 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		4E5F30E92BC3659600356231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E5F30F62BC380BF00356231 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E5F31032BC420D500356231 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		4E5F31112BC4256500356231 /* AppClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F31132BC4256500356231 /* AppClipsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipsApp.swift; sourceTree = "<group>"; };
@@ -226,14 +225,12 @@
 		4E5F311C2BC4256700356231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E5F311D2BC4256700356231 /* AppClips.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppClips.entitlements; sourceTree = "<group>"; };
 		4E5F312C2BC61D8F00356231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		4E5F312D2BC7165100356231 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Notifications.swift"; sourceTree = "<group>"; };
-		4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+QuickActions.swift"; sourceTree = "<group>"; };
 		4E5F31512BC83D0A00356231 /* HeroesWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HeroesWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E5F31532BC83D0A00356231 /* HeroesWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesWatchApp.swift; sourceTree = "<group>"; };
 		4E5F31552BC83D0A00356231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4E5F31572BC83D0C00356231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E5F315A2BC83D0C00356231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E826DAC2BD73FD40026A2C7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.4.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
 		4E8F644A2BCA3204005F55C7 /* test.apns */ = {isa = PBXFileReference; lastKnownFileType = text; name = test.apns; path = Heroes/test.apns; sourceTree = SOURCE_ROOT; };
 		4E8F644E2BCA3654005F55C7 /* HeroesWatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeroesWatch Watch App.entitlements"; sourceTree = "<group>"; };
 		4EA017772BCDB64F00A84B72 /* vince.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vince.jpg; sourceTree = "<group>"; };
@@ -261,6 +258,7 @@
 			files = (
 				4E5F31662BC8BA0300356231 /* HeroiOS in Frameworks */,
 				4E5F31682BC8BA0700356231 /* HeroShared in Frameworks */,
+				4E3490D32C8A17F600B30345 /* SFSymbolsMacro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +315,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E826DAD2BD73FD40026A2C7 /* UserNotifications.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,10 +392,7 @@
 				4E5F312C2BC61D8F00356231 /* Info.plist */,
 				4EA017772BCDB64F00A84B72 /* vince.jpg */,
 				4E5F30652BC35E9000356231 /* DemoApp.swift */,
-				4E5F30F62BC380BF00356231 /* AppDelegate.swift */,
-				4E5F31312BC7389600356231 /* AppDelegate+QuickActions.swift */,
-				4E5F312F2BC7382D00356231 /* AppDelegate+Notifications.swift */,
-				4E5F312D2BC7165100356231 /* SceneDelegate.swift */,
+				4E44A5072C8A075D00B1F97B /* TestView.swift */,
 				4E5F30692BC35E9200356231 /* Assets.xcassets */,
 				4E5F306B2BC35E9200356231 /* Demo.entitlements */,
 				4E5F306C2BC35E9200356231 /* Preview Content */,
@@ -417,6 +413,7 @@
 		4E5F30792BC35F3000356231 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E826DAC2BD73FD40026A2C7 /* UserNotifications.framework */,
 				4E5F307A2BC35F3000356231 /* UniformTypeIdentifiers.framework */,
 				4E5F30A32BC35FFF00356231 /* UserNotifications.framework */,
 				4E5F30A52BC35FFF00356231 /* UserNotificationsUI.framework */,
@@ -589,6 +586,7 @@
 			packageProductDependencies = (
 				4E5F31652BC8BA0300356231 /* HeroiOS */,
 				4E5F31672BC8BA0700356231 /* HeroShared */,
+				4E3490D22C8A17F600B30345 /* SFSymbolsMacro */,
 			);
 			productName = Demo;
 			productReference = 4E5F30622BC35E9000356231 /* Swift Heroes.app */;
@@ -830,6 +828,9 @@
 				it,
 			);
 			mainGroup = 4E5F30592BC35E9000356231;
+			packageReferences = (
+				4E3490D12C8A17F600B30345 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */,
+			);
 			productRefGroup = 4E5F30632BC35E9000356231 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -946,10 +947,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E5F31302BC7382D00356231 /* AppDelegate+Notifications.swift in Sources */,
-				4E5F312E2BC7165100356231 /* SceneDelegate.swift in Sources */,
-				4E5F30F72BC380BF00356231 /* AppDelegate.swift in Sources */,
-				4E5F31322BC7389600356231 /* AppDelegate+QuickActions.swift in Sources */,
+				4E44A5082C8A076400B1F97B /* TestView.swift in Sources */,
 				4E5F30662BC35E9000356231 /* DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1232,10 +1230,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo;
 				PRODUCT_NAME = "Swift Heroes";
@@ -1247,7 +1245,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
-				TVOS_DEPLOYMENT_TARGET = 17.4;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Debug;
 		};
@@ -1277,10 +1276,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftheroes.Demo;
 				PRODUCT_NAME = "Swift Heroes";
@@ -1292,7 +1291,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,7";
-				TVOS_DEPLOYMENT_TARGET = 17.4;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				XROS_DEPLOYMENT_TARGET = 1.0;
 			};
 			name = Release;
 		};
@@ -1433,7 +1433,7 @@
 				INFOPLIST_FILE = Notification/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Notification;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1466,7 +1466,7 @@
 				INFOPLIST_FILE = Notification/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Notification;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1981,7 +1981,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		4E3490D12C8A17F600B30345 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukepistrol/SFSymbolsMacro.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		4E3490D22C8A17F600B30345 /* SFSymbolsMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4E3490D12C8A17F600B30345 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */;
+			productName = SFSymbolsMacro;
+		};
 		4E5F31652BC8BA0300356231 /* HeroiOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HeroiOS;

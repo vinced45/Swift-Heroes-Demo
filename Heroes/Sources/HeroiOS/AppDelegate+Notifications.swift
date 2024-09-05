@@ -10,8 +10,8 @@ import Foundation
 #if os(iOS) || os(visionOS) || os(macOS)
 import UserNotifications
 
-extension AppDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+public extension AppDelegate {
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         let userInfo = notification.request.content.userInfo
         print("Receive notification in the foreground \(userInfo)")
         let pref = UserDefaults.init(suiteName: "group.id.gits.notifserviceextension")
@@ -21,7 +21,7 @@ extension AppDelegate {
         completionHandler([.alert, .badge, .sound])
     }
     
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+    public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let userInfo = response.notification.request.content.userInfo
             //if let customData = userInfo["customData"] as? String {
                 //print("Custom data received: \(customData)")

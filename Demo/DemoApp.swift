@@ -11,6 +11,7 @@ import CoreSpotlight
 import Observation
 import HeroiOS
 import HeroShared
+import Macros
 
 @main
 struct DemoApp: App {
@@ -21,13 +22,18 @@ struct DemoApp: App {
     
     @State var inBackground: Bool = false
     
+    init() {
+        print("Main first")
+    }
+    
     var body: some Scene {
         WindowGroup {
             if #available(iOS 17.0, *) {
                 if inBackground {
                     BackgroundView()
                 } else {
-                    MainView()
+                    //MainView()
+                    UserProfileView()
                 }
             } else if #available(macOS 14.0, *) {
                 MainView()

@@ -55,15 +55,26 @@ public struct NotificationView: View {
         self.viewModel = viewModel
     }
     @State var viewModel: NotificationModel
-    
+    private let photoURL = URL(string: "https://picsum.photos/256")
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     public var body: some View {
         switch viewModel.catergory {
         case "video": videoView
         case "images": imageCarosel
-        default: defaultView
+        default: remoteImageView
         }
     }
+    
+    var remoteImageView: some View {
+        AsyncImage(url: photoURL) { image in
+            image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        } placeholder: {
+            ProgressView()
+        }
+    }
+    
     var defaultView: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.heroOrange,.heroBlue ]), startPoint: .top, endPoint: .bottom)

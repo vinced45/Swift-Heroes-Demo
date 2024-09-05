@@ -7,15 +7,15 @@
 
 import Foundation
 import SwiftUI
-import HeroiOS
 import HeroShared
 
 #if os(iOS) || os(visionOS)
 import UserNotifications
 
-class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+public class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
+        print("AppDelegate first")
         UNUserNotificationCenter.current().delegate = self
         NotificationHelper().setup()
         application.registerForRemoteNotifications()
@@ -23,7 +23,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         return true
     }
     
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    public func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let tokenChars = (deviceToken as NSData).bytes.bindMemory(to: CChar.self, capacity: deviceToken.count)
         var tokenString = ""
         for i in 0..<deviceToken.count {
@@ -33,7 +33,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         print("Device Token:", tokenString)
     }
 
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    public func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register for notifications: \(error.localizedDescription)")
     }
 }
@@ -42,15 +42,15 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
 #if os(macOS)
 import UserNotifications
 
-class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDelegate {
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
+public class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDelegate {
+    public func applicationDidFinishLaunching(_ aNotification: Notification) {
         UNUserNotificationCenter.current().delegate = self
         NotificationHelper().setup()
         NSApplication.shared.registerForRemoteNotifications(matching: [.alert, .sound, .badge])
         //NSUserNotificationCenter.default.delegate = self
     }
     
-    func application(_ application: NSApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    public func application(_ application: NSApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let tokenChars = (deviceToken as NSData).bytes.bindMemory(to: CChar.self, capacity: deviceToken.count)
         var tokenString = ""
         for i in 0..<deviceToken.count {
@@ -60,7 +60,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCenterDele
         print("Device Token:", tokenString)
     }
 
-    func application(_ application: NSApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+    public func application(_ application: NSApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register for notifications: \(error.localizedDescription)")
     }
 }
