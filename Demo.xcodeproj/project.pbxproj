@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E2904042BCB768E00752A3F /* NotificationViewController+UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2904032BCB768E00752A3F /* NotificationViewController+UserNotifications.swift */; };
-		4E3490D32C8A17F600B30345 /* SFSymbolsMacro in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3490D22C8A17F600B30345 /* SFSymbolsMacro */; };
+		4E3490D52C8A4C2300B30345 /* Macros in Frameworks */ = {isa = PBXBuildFile; productRef = 4E3490D42C8A4C2300B30345 /* Macros */; };
 		4E44A5082C8A076400B1F97B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44A5072C8A075D00B1F97B /* TestView.swift */; };
 		4E5F30662BC35E9000356231 /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5F30652BC35E9000356231 /* DemoApp.swift */; };
 		4E5F306A2BC35E9200356231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E5F30692BC35E9200356231 /* Assets.xcassets */; };
@@ -258,7 +258,7 @@
 			files = (
 				4E5F31662BC8BA0300356231 /* HeroiOS in Frameworks */,
 				4E5F31682BC8BA0700356231 /* HeroShared in Frameworks */,
-				4E3490D32C8A17F600B30345 /* SFSymbolsMacro in Frameworks */,
+				4E3490D52C8A4C2300B30345 /* Macros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +586,7 @@
 			packageProductDependencies = (
 				4E5F31652BC8BA0300356231 /* HeroiOS */,
 				4E5F31672BC8BA0700356231 /* HeroShared */,
-				4E3490D22C8A17F600B30345 /* SFSymbolsMacro */,
+				4E3490D42C8A4C2300B30345 /* Macros */,
 			);
 			productName = Demo;
 			productReference = 4E5F30622BC35E9000356231 /* Swift Heroes.app */;
@@ -829,7 +829,6 @@
 			);
 			mainGroup = 4E5F30592BC35E9000356231;
 			packageReferences = (
-				4E3490D12C8A17F600B30345 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */,
 			);
 			productRefGroup = 4E5F30632BC35E9000356231 /* Products */;
 			projectDirPath = "";
@@ -1981,22 +1980,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		4E3490D12C8A17F600B30345 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lukepistrol/SFSymbolsMacro.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		4E3490D22C8A17F600B30345 /* SFSymbolsMacro */ = {
+		4E3490D42C8A4C2300B30345 /* Macros */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4E3490D12C8A17F600B30345 /* XCRemoteSwiftPackageReference "SFSymbolsMacro" */;
-			productName = SFSymbolsMacro;
+			productName = Macros;
 		};
 		4E5F31652BC8BA0300356231 /* HeroiOS */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -26,13 +26,11 @@ public struct NavigationTitleMacro: MemberMacro {
         let newBodyCode = """
         var body: some View {
             NavigationView {
-                content
-                    .navigationTitle("\(titleValue)")
+                VStack {
+                    Text("Name")
+                }
+                .navigationTitle("\(titleValue)")
             }
-        }
-
-        @ViewBuilder private var content: some View {
-            \(declaration.memberBlock.members.map { $0.description }.joined(separator: "\n"))
         }
         """
 
